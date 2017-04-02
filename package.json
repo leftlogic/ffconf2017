@@ -1,0 +1,17 @@
+{
+  "name": "@remy/ffconf2017",
+  "version": "1.0.0",
+  "description": "ffconf2017",
+  "scripts": {
+    "start": "serve"
+  },
+  "engines": {
+    "node": "7"
+  },
+  "author": "Remy Sharp",
+  "license": "MIT",
+  "homepage": "https://2017.ffconf.org",
+  "dependencies": {
+    "serve": "^5.1.2"
+  }
+}

@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #002b36;
+  height: 100%;
+  font-family: Menlo-RegularForPowerline, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace;
+  font-size: 1rem;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  padding: 0;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  min-height: 100%;
+  flex-grow: 1;
+  /* flex: 1; */
+}
+
+pre {
+  font-family: Menlo-RegularForPowerline, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace;
+  white-space: pre-wrap;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+x-row {
+  display: block;
+  font-size: 16px;
+  font-variant-ligatures: none;
+  height: 100%;
+  overflow: hidden;
+  white-space: pre;
+  width: 100%;
+  outline: none !important;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(131, 148, 150);
+  background-color: transparent;
+}
+
+x-row {
+  display: block;
+  height: 19px;
+  line-height: 1.2em;
+}
+
+.unicode-node {
+    display: inline-block;
+    vertical-align: top;
+    width: 9.6328125px;
+}
+
+main, pre {
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
+
+main {
+  background: url(border.gif) no-repeat;
+  background-size: 100% 100%;
+  padding: 50px;
+  color: white;
+  z-index: 1;
+  align-self: center;
+}
+
+#yupwedidthis {
+  pointer-events: none;
+  position: relative;
+  align-self: center;
+}
+
+
+.content > * {
+  flex-basis: 40%;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+
+.flex > * {
+  align-self: flex-start;
+}
+
+main :first-child {
+  margin-top: 0;
+}
+
+main :last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 720px) {
+  #thoughts {
+    display: none;
+  }
+
+  #yupwedidthis {
+    position: fixed;
+  }
+
+  .content > main {
+    background-color: rgba(0, 43, 54, 0.63);
+    flex: 0 90%;
+  }
+
+  input {
+    width: 100% !important;
+    margin: 5px 0;
+  }
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid hotpink;
+  background: white;
+  font-family: Menlo-RegularForPowerline, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+
+footer,
+a {
+  color: rgb(131, 148, 150);
+}
+
+a:hover {
+  color: white;
+}
+
+footer {
+  font-size: 80%;
+  line-height: 1.5rem;
+  margin-top: 30px;
+}
