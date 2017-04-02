@@ -12,18 +12,32 @@ html {
 body {
   min-height: 100%;
   margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   min-height: 100%;
-  flex-grow: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   /* flex: 1; */
 }
 
@@ -33,11 +47,21 @@ pre {
 }
 
 .flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  align-self: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 x-row {
@@ -77,25 +101,39 @@ main {
   padding: 50px;
   color: white;
   z-index: 1;
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
 }
 
 #yupwedidthis {
   pointer-events: none;
   position: relative;
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
 }
 
 
 .content > * {
-  flex-basis: 40%;
-  flex-shrink: 1;
-  flex-grow: 0;
+  -webkit-flex-basis: 40%;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 
 
 .flex > * {
-  align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 
 main :first-child {
@@ -117,7 +155,9 @@ main :last-child {
 
   .content > main {
     background-color: rgba(0, 43, 54, 0.63);
-    flex: 0 90%;
+    -webkit-flex: 0 90%;
+        -ms-flex: 0 90%;
+            flex: 0 90%;
   }
 
   input {
