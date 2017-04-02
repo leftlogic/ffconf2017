@@ -7,7 +7,8 @@ app.use((req, res, next) => {
   res.setHeader('x-powered-by', 'ffconf');
   next();
 });
-app.use(express.static(__dirname, + '/public'));
+
+app.use('/', express.static(__dirname + '/public'));
 
 if (module.parent) {
   module.exports = app;
