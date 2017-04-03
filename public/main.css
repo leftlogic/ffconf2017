@@ -118,11 +118,11 @@ main {
 
 
 .content > * {
-  -webkit-flex-basis: 40%;
-      -ms-flex-preferred-size: 40%;
+  -ms-flex-preferred-size: 40%;
+          -webkit-flex-basis: 40%;
           flex-basis: 40%;
-  -webkit-flex-shrink: 1;
-      -ms-flex-negative: 1;
+  -ms-flex-negative: 1;
+          -webkit-flex-shrink: 1;
           flex-shrink: 1;
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
@@ -155,9 +155,13 @@ main :last-child {
 
   .content > main {
     background-color: rgba(0, 43, 54, 0.63);
-    -webkit-flex: 0 90%;
-        -ms-flex: 0 90%;
-            flex: 0 90%;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+                -ms-grid-row-align: auto;
+            align-self: auto;
   }
 
   input {
