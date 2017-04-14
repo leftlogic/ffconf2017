@@ -185,7 +185,6 @@ a:hover {
 footer {
   font-size: 80%;
   line-height: 1.5rem;
-  margin-top: 30px;
 }
 
 @media screen and (max-width: 720px) {
@@ -194,6 +193,7 @@ footer {
   }
 
   #yupwedidthis {
+    display: none;
     position: fixed;
     z-index: 0;
     opacity: 0.3;
