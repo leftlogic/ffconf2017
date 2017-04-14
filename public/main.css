@@ -100,14 +100,20 @@ main, pre {
 }
 
 main {
-  background: url(border.gif) no-repeat;
+/*  background: url(border.gif) no-repeat;*/
+  background: rgb(96,108,136);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 );
+
   background-size: 100% 100%;
   padding: 50px;
   color: white;
   z-index: 1;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-              -ms-grid-row-align: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
           align-self: center;
 }
 
@@ -151,7 +157,7 @@ main :last-child {
 input {
   padding: 5px;
   font-size: 16px;
-  border: 2px solid hotpink;
+  border: 2px solid #3e4452;
   background: white;
   font-family: Menlo-RegularForPowerline, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace;
 }
