@@ -2,7 +2,7 @@
   "name": "@remy/ffconf2017",
   "version": "1.0.6",
   "description": "ffconf2017",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "node ."
   },
@@ -13,6 +13,10 @@
   "license": "MIT",
   "homepage": "https://2017.ffconf.org",
   "dependencies": {
-    "express": "^4.15.2"
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "express-hbs": "^1.0.4",
+    "marked": "^0.3.6",
+    "moment": "^2.18.1"
   }
 }
