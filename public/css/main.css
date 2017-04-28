@@ -70,7 +70,7 @@ header {
   position: sticky;
   top: calc(-100vh + 90px);
   background-repeat: no-repeat;
-  background-image: url(/images/333209363_eightbit.jpg);
+  background-image: url(/images/399685708_eightbit2.jpg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -280,6 +280,7 @@ header h2 {
   margin: 0 auto;
   line-height: 3rem;
   padding: 1rem;
+  text-transform: uppercase;
 }
 
 h3 {
