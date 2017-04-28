@@ -3,7 +3,7 @@
 <head>
   <title>ffconf2017 :: JavaScript conference</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="icon" href="/images/512.png">
+  <link rel="icon" href="/images/512-alt.png">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 
@@ -29,7 +29,15 @@
 
 <body>
   {{> header}}
-  <main role="main">
+  <main id="content" role="main">
+  <script type="foo">
+  const quotes = document.querySelectorAll('.quote-template');
+  const a = quotes[Math.random() * quotes.length | 0];
+  const d = document.createElement('div');
+  d.className = 'quote';
+  d.innerHTML = '<div class="quote-wrapper inner">' + a.innerHTML + '</div>';
+  document.getElementById('content').appendChild(d);
+  </script>
   {{{body}}}
   </main>
   {{>footer}}

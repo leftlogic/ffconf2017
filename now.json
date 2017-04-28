@@ -1,0 +1,6 @@
+{
+  "alias": "ffconf.isthe.link",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
