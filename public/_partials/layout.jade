@@ -1,0 +1,127 @@
+block vars
+doctype
+html(id=id, class=klass)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='description', content=siteDescription)
+    meta(name='format-detection', content='telephone=no')
+    meta(name='theme-color', content='#1800ff')
+    meta(name='apple-mobile-web-app-title', content=shortName)
+    meta(name='application-name', content=shortName)
+
+    title= siteTitle
+
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="@ffconf")
+    meta(name="twitter:creator" content="@rem")
+    meta(name="twitter:title" content="ffconf :: JavaScript Conference")
+    meta(name="twitter:description" content="Care about the web? ffconf is curated for you: PWA, a11y, devtools, CI & CD, future of CSS & more.")
+    meta(name="twitter:image:src" content="https://2017.ffconf.org/images/twitter-card-280x150.jpg")
+
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='all-the-source', href=source)
+    link(rel='author', href='/humans.txt')
+    link(rel='manifest', href='/manifest.json')
+
+    link(rel='apple-touch-icon', sizes='180x180', href='/images/favicons/apple-touch-icon.png')
+    link(rel='icon', type='image/png', href='/images/favicons/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='/images/favicons/favicon-16x16.png', sizes='16x16')
+    link(rel='mask-icon', href='/images/favicons/safari-pinned-tab.svg', color='#1800ff')
+    link(rel='shortcut icon', href='/images/favicons/favicon.ico')
+    meta(name='msapplication-config', content='/images/favicons/browserconfig.xml')
+
+    <!--[if lt IE 9]>
+    script(src='/js/html5shiv.min.js')
+    <![endif]-->
+
+    if environment == "production"
+      script.
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','#{analytics}','auto');ga('send','pageview');
+      // Twitter universal website tag code
+      script.
+        !function(e,n,u,a){e.twq||(a=e.twq=function(){a.exe?a.exe.apply(a,arguments):
+        a.queue.push(arguments);},a.version='1',a.queue=[],t=n.createElement(u),
+        t.async=!0,t.src='//static.ads-twitter.com/uwt.js',s=n.getElementsByTagName(u)[0],
+        s.parentNode.insertBefore(t,s))}(window,document,'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init','nvhge');
+        twq('track','PageView');
+      script(src="//platform.twitter.com/oct.js")
+      script.
+        twttr.conversion.trackPid('nvhgx', { tw_sale_amount: 0, tw_order_quantity: 0 });
+
+
+    script.
+      var confDays = [new Date('#{dates[0]}'), new Date('#{dates[1]}')];
+      document.documentElement.className += ' yes-js';
+      //=== SVG support
+      function supportsSVG() {
+        return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+      }
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+      }
+      //=== Safari 8
+      if (/constructor/i.test(window.HTMLElement) && !('flexWrap' in document.documentElement.style)) {
+        document.documentElement.className += ' i-hate-safari';
+      }
+      //=== Fonts
+      var fontUrl = '/css/fonts.47d3adddc08644ab52c7badaef40c832.woff.json';
+      var fontMd5 = '47d3adddc08644ab52c7badaef40c832';
+      var fontKey = 'fonts';
+      var fontCache = null;
+      function fontInsert(value) {
+        var style = document.createElement('style');
+        style.innerHTML = value;
+        document.head.appendChild(style);
+      }
+      // PRE-RENDER
+      try {
+        fontCache = window.localStorage.getItem(fontKey);
+        if (fontCache) {
+          fontCache = JSON.parse(fontCache);
+          if (fontCache.md5 == fontMd5) {
+            fontInsert(fontCache.value);
+          } else {
+            // Busting cache when md5 doesn't match
+            window.localStorage.removeItem(fontKey);
+            fontCache = null;
+          }
+        }
+      } catch(e) {
+        // Most likely LocalStorage disabled
+      }
+
+  - var completeDate = moment(dates[0] + ' ' + startTime)
+
+  body.wrapper
+
+    include ../js/formatting
+    include ../js/markdown
+
+    include ../_partials/header
+
+    block content
+
+    div.main-wrapper
+      include ../_partials/sponsors
+
+      include ../_partials/footer
+
+    <!--[if gt IE 8]><!-->
+    script(src='/js/script.js')
+    //- script.
+    //-   if ('serviceWorker' in navigator) {
+    //-     navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    //-   }
+
+    <!--<![endif]-->

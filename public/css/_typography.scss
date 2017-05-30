@@ -1,0 +1,20 @@
+@import "var";
+/* Typography
+   ========================================================================== */
+a {
+  text-decoration: none;
+}
+.quote a,
+.sponsor-title {
+  font-family: $f-title;
+  text-transform: uppercase;
+}
+.monty-1st .sponsor-title {
+  font-size: 28px;
+}
+.monty-2nd .sponsor-title {
+  font-size: 23px;
+}
+.quote a {
+  font-size: 14px;
+}

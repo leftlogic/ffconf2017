@@ -1,0 +1,34 @@
+@import "var";
+/* Colors
+   ========================================================================== */
+.page-sessions {
+  .wrapper {
+    background: $c-blue;
+  }
+  .sponsor {
+    box-shadow: 6px 6px 0 0 $c-cyan;
+
+    &-title {
+      color: $c-yellow;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-cyan;
+    }
+
+    &-image {
+      border-color: $c-yellow;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-purple;
+      }
+    }
+  }
+}

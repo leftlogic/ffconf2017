@@ -1,0 +1,39 @@
+{
+  "globals": {
+    "siteTitle": "ffconf :: JavaScript Conference :: 9th & 10th November 2017",
+    "siteDescription": "ffconf 2017 is a one day JavaScript Conference at the Duke of York’s Picturehouse in Brighton, UK run on 9th and 10th November 2017",
+    "shortName": "ffconf 2017",
+    "dates": ["2017-11-09", "2017-11-10"],
+    "startTime": "09:00",
+    "analytics": "UA-1656750-50",
+    "id": "ffconf-2017",
+    "ticketPrice": "160",
+    "ticketUrl" : "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
+    "source": "https://github.com/leftlogic/ffconf2017",
+    "config": {
+      "phase": 0.5,
+      "soldout": {
+        "conference": false,
+        "day1": false,
+        "day2": false,
+        "workshops": false,
+        "css-layout": false,
+        "angular-2": false,
+        "debug-and-tools": false
+      },
+      "mode": "schedule",
+      "comments": {
+        "mode-options": "titles|speakers|schedule // just a comment // we are not using it this year",
+        "phase-options": {
+          "0": "before selling any ticket",
+          "0.5": "release of topics before selling tickets",
+          "1": "first batch of tickets",
+          "2": "second batch of tickets",
+          "3": "release of the full sessions",
+          "4": "after the conference"
+        }
+      },
+      "sponsorsAvailable": true
+    }
+  }
+}

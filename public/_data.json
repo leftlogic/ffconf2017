@@ -1,0 +1,585 @@
+{
+  "locations": [
+    {
+      "type": "Venues",
+      "location": [
+        {
+          "name": "Duke of Yorks",
+          "detail": "Conference",
+          "url": "http://www.picturehouses.co.uk/cinema/Duke_Of_Yorks/"
+        },
+        {
+          "name": "Lighthouse",
+          "detail": "Workshops",
+          "url": "http://goo.gl/maps/GTYX"
+        },
+        {
+          "name": "The Fountainhead",
+          "detail": "Pre Party",
+          "url": "http://goo.gl/maps/6FH8"
+        },
+        {
+          "name": "OhSo Social",
+          "detail": "After Party",
+          "url": "https://goo.gl/maps/qzmhKyku9CD2"
+        }
+      ]
+    },
+    {
+      "type": "Hotels",
+      "location": [
+        {
+          "name": "Jury's Inn",
+          "url": "http://brightonhotels.jurysinns.com/",
+          "detail": "from £64",
+          "extra": "next to Train station & close to venue",
+          ":extra-discount": "quote \"Left Logic\" for the discount"
+        },
+        {
+          "name": "Travellodge",
+          "url": "http://www.travelodge.co.uk/hotels/18/Brighton-hotel",
+          "detail": "from £28"
+        },
+        {
+          "name": "My Hotel",
+          "url": "http://www.myhotels.com/my-hotel-brighton/index.html",
+          "detail": "from £90",
+          "extra": "standard and superior respectively"
+        },
+        {
+          "name": "Old Ship Hotel",
+          "url": "http://www.thehotelcollection.co.uk/hotels/old-ship-brighton-hotel/",
+          "detail": "from £82",
+          "extra": "close to after party venue"
+        }
+      ]
+    },
+    {
+      "type": "Food/Drink",
+      "location": [
+        {"name": "Bardsley's", "detail": "fish 'n chips", "url": "http://www.bardsleys-fishandchips.co.uk/map"},
+        {"name": "The Open House", "detail": "good pub food", "url": "http://goo.gl/maps/eZPV8"},
+        {"name": "The Joker", "detail": "wings & salt beef", "url": "http://goo.gl/VNUwb"},
+        {"name": "La Choza", "detail": "mexican street food", "url": "http://www.hareandhoundsbrighton.com/"}
+      ]
+    }
+  ],
+  "sponsors": {
+    "1st": {
+      "title": "platinum",
+      "list": [
+        {
+          "name": "Google Chrome",
+          "url": "https://developers.google.com/live/chrome/",
+          "img": "chrome.png"
+        },
+        {
+          "name": "Samsung",
+          "url": "http://developer.samsung.com/internet",
+          "img": "samsung.png"
+        }
+      ]
+    },
+    "2nd": {
+      "title": "gold",
+      "list": [
+        {
+          "name": "Mozilla",
+          "url": "http://mozilla.com",
+          "img": "mozilla.png"
+        },
+        {
+          "name": "Amex",
+          "url": "https://careers.americanexpress.com/tech/?utm_source=ffconf_website&utm_medium=ffconf%20sponsors%20banner&utm_campaign=ffconf%20Sponsorship%20Web",
+          "img": "amex.png"
+        },
+        {
+          "name": "JS Bin",
+          "url": "http://jsbin.com/?utm_source=ff2016-site&utm_medium=sponsor&utm_campaign=ff2016-site",
+          "img": "jsbin.png"
+        },
+        {
+          "name": "Snyk",
+          "url": "https://snyk.io/",
+          "img": "snyk.svg"
+        }
+      ]
+    },
+    "3rd": {
+      "title": "micro",
+      "list": [
+        {
+          "name": "Brandwatch",
+          "url": "https://www.brandwatch.com/careers",
+          "img": "brandwatch.png"
+        },
+        {
+          "name": "Opbeat",
+          "url": "https://opbeat.com",
+          "img": "opbeat.svg"
+        },
+        {
+          "name": "Microsoft Edge",
+          "url": "https://dev.microsoftedge.com/",
+          "img": "ms-edge.png"
+        },
+        {
+          "name": "Headforwards",
+          "url": "https://www.headforwards.com/careers/",
+          "img": "headforwards.svg"
+        },
+        {
+          "name": "Prodpad",
+          "url": "https://www.prodpad.com/join-us/",
+          "img": "prodpad.png"
+        },
+        {
+          "name": "Prodpad",
+          "url": "https://www.prodpad.com/join-us/",
+          "img": "prodpad.png"
+        }
+      ]
+    }
+  },
+  "sessions": {
+    "sessions": [
+      {
+        "break": true,
+        "title": "Registration",
+        "duration": 40
+      },
+      {
+        "break": true,
+        "title": "Opening remarks",
+        "duration": 10
+      },
+      {
+        "duration": 40,
+        "title": "Next Level CSS",
+        "speaker": {
+          "name": "Rachel Andrew",
+          "twitter": "rachelandrew",
+          "photo": "rachel.jpg"
+        },
+        "description": "While we were all looking the other way browsers have been implementing CSS features that do things you might think you need JavaScript or at least a pre-processor to achieve. We’ll take a tour through what is landing in the CSS specifications and your browsers right now and in the very near future.",
+        "bio": "",
+        "links": [],
+        "slides": "http://www.slideshare.net/rachelandrew/nextlevel-css",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?v=uXYZbLT0j9c&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
+      },
+      {
+        "duration": 40,
+        "title": "Progressive Web",
+        "description": "With new web technologies enabling a new generation of install-able app-like websites it is important to ensure the web carries on working for everyone. This talk will discuss the P in PWA, progressive web apps should work for everyone and should not let their app-like approach divorce them from the web.",
+        "speaker": {
+          "name": "Ada Rose Edwards",
+          "twitter": "Lady_Ada_King",
+          "photo": "ada.jpg"
+        },
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?v=5ylZbXelPMA&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
+      },
+      {
+        "break": true,
+        "title": "Coffee break (30 mins)",
+        "duration": 30
+      },
+      {
+        "duration": 40,
+        "title": "Technologic (Human After All): Accessibility remix",
+        "description": "With a little help from Daft Punk, we will explain accessibility mechanics in the browser, why CSS isn't just about looking good, and what tools you can use to get ahead of the game.",
+        "speaker": {
+          "name": "Léonie Watson",
+          "twitter": "LeonieWatson",
+          "photo": "leonie.jpg"
+        },
+        "bio": "",
+        "links": [],
+        "slides": "http://ljwatson.github.io/decks/2016/ffconf/index.html",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?v=spxT2CmHoPk&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
+      },
+      {
+        "duration": 40,
+        "title": "All Things Continuous",
+        "speaker": {
+          "name": "Andrew Martin",
+          "twitter": "sublimino",
+          "photo": "andrew.jpg"
+        },
+        "description": "Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips, max velocity!",
+        "bio": "",
+        "links": [],
+        "slides": "https://www.binarysludge.com/2016/11/11/talk-all-things-continuous-at-ffconf/",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX&v=7NU2v4hYXrY"
+      },
+      {
+        "break": true,
+        "duration": 90,
+        "title": "Lunch break (90 mins)"
+      },
+      {
+        "duration": 40,
+        "title": "Power of Emoji",
+        "speaker": {
+          "name": "Mariko Kosaka",
+          "twitter": "kosamari",
+          "photo": "mariko.jpg"
+        },
+        "description": "From improving performance 📈 of mobile web in 1999 to reacting with 👍 and 🎉 on our Pull Request in 2016, Emoji has become part of our daily communication. Emoji is fun and ambiguous, let's look at how it became part of our daily communication & how we can invent new use as creators of the web! ❤️ 💯 💁",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?v=9BaLTBTqHmw&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
+      },
+      {
+        "duration": 40,
+        "title": "Optimise your Web Development Workflow",
+        "speaker": {
+          "name": "Umar Hansa",
+          "twitter": "umaar",
+          "photo": "umar.jpg"
+        },
+        "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?v=N33lYfsAsoU&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
+      },
+      {
+        "break": true,
+        "duration": 30,
+        "title": "Cake break (30 mins)"
+      },
+      {
+        "duration": 40,
+        "title": "A brief history and mishistory of modularity",
+        "description": "\"MAKE IT MODULAR,\" they said. \"IT WILL BE BETTER,\" they said. Modularity is a term so common in today, that it's easy to uncritically accept it as a fundamental development principle. What does \"modularity\" *actually* mean? We will talk through the technical etymology of \"modularity\" and examine history on both its current use today, and where it's heading in the future.",
+        "speaker": {
+          "name": "Ashley Williams",
+          "twitter": "ag_dubs",
+          "photo": "ashley.jpg"
+        },
+        "bio": "",
+        "links": [],
+        "slides": "https://ashleygwilliams.github.io/ffconf-2016/",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX&v=nYj4exblbgI"
+      },
+      {
+        "duration": 40,
+        "title": "Art.js",
+        "description": "What is creative coding, especially with realtime animations and data visualisation. Looking at the animation loop, some gotchas & tricks (e.g. cheap motion blur or glow), sound synthesis, and more. Then we'll do a live coding session to put in this practice, have fun and create something cool together!",
+        "speaker": {
+          "name": "Mathieu 'p01' Henri",
+          "twitter": "p01",
+          "photo": "mathieu.jpg"
+        },
+        "bio": "",
+        "links": [],
+        "slides": "http://www.p01.org/artjs_at_ffconf/",
+        "audio": "",
+        "video": "https://www.youtube.com/watch?list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX&v=OT-Dc4nJKEo"
+      },
+      {
+        "break": true,
+        "duration": 20,
+        "title": "Closing remarks"
+      },
+      {
+        "break": true,
+        "start": "18:15",
+        "end": "Late",
+        "duration": 90,
+        "afterparty": true,
+        "title": "After Party"
+      }
+    ]
+  },
+  "workshops": [
+    {
+      "title": "Advanced CSS Layout Training",
+      "slug": "css-layout",
+      "ticket": {
+        "url": "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
+        "price": "445"
+      },
+
+      "details": {
+        "date": "November 9 2016",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Rachel Andrew",
+        "twitter": "rachelandrew",
+        "photo": "rachel.jpg"
+      },
+
+      "description": "CSS Layout has been stuck somewhere around 2006 for several years. We have had to attempt complex layout using tools such as floats and positioning. These methods never designed for complex page and application layout. However things are changing and it’s a great time to take a look at the layout methods that are now part of modern CSS, and those coming in the very near future.",
+      "extendedDescription": "This workshop is designed for designers and developers who already have a good working knowledge of HTML and CSS. We will cover a range of CSS methods for achieving layout, from those you are safe to use right now even if you need to support older version of Internet Explorer through to things that while still classed as experimental, are likely to ship in browsers in the coming months. The aim is to teach you some tips that I’ve learned working on real projects, alongside sharing some of the exciting things that I’ve been experimenting with as I look into emerging specifications.\n\nThis will be a practical workshop, we will work through code examples together, and you’ll have those worked examples to take away to experiment with further or to share with your team.",
+      "topics": [
+        {
+          "title": "Learning from the past",
+          "description": "What can we take from older layout methods that will still be helpful in the future?"
+        },
+        {
+          "title": "CSS Layout today",
+          "description": "Multiple column layout, flexbox and CSS Shapes"
+        },
+        {
+          "title": "Just Landing",
+          "description": "Find out about CSS Grid Layout, how it works with Flexbox and Box Alignment as a new layout system"
+        },
+        {
+          "title": "Experimental",
+          "description": "What else is hiding in the CSS specifications? How can we encourage browser implementations?"
+        },
+        {
+          "title": "Building the future",
+          "description": "Practical suggestions for using these techniques without locking out users of old browsers"
+        }
+      ]
+    },
+    {
+      "title": "Angular 2",
+      "slug": "angular-2",
+      "ticket": {
+        "url": "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
+        "price": "445"
+      },
+
+      "details": {
+        "date": "November 9 2016",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Gerard Sans",
+        "twitter": "gerardsans",
+        "photo": "gerard.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "TypeScript",
+          "description": "ES6 and beyond."
+        },
+        {
+          "title": "Components",
+          "description": "Basic structure and best practices."
+        },
+        {
+          "title": "Dependency Injection",
+          "description": "How to make it work for you."
+        },
+        {
+          "title": "Data Architecture",
+          "description": "Covering XHR, JSONP, RxJS 5, EventEmitter and Async Pipes."
+        },
+        {
+          "title": "New Router",
+          "description": "How to setup, setting child routes and more."
+        },
+        {
+          "title": "Unit Testing",
+          "description": "How to unit test all pieces."
+        },
+        {
+          "title": "Migration",
+          "description": "How to prepare Today and migrate seamlessly step-by-step."
+        }
+      ],
+      "description": "Angular 2 is a revolutionary platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS.",
+      "extendedDescription": "In this workshop you will learn the major improvements in Angular 2 so you can start creating your own projects and enjoy its full benefits today!"
+    },
+    {
+      "title": "Mastering browser devtools",
+      "slug": "debug-and-tools",
+      "ticket": {
+        "url": "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
+        "price": "445"
+      },
+
+      "details": {
+        "date": "November 9 2016",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Remy Sharp",
+        "twitter": "rem",
+        "photo": "remy.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "Workflow",
+          "description": "How to make DevTools your development IDE"
+        },
+        {
+          "title": "Console",
+          "description": "Going way beyond console.log"
+        },
+        {
+          "title": "Memory leaks",
+          "description": "Identify and remediate"
+        },
+        {
+          "title": "Network",
+          "description": "What's slow, why and the detail behind a request"
+        },
+        {
+          "title": "Performance",
+          "description": "How to read and investigate rendering issues"
+        },
+        {
+          "title": "Mobile & responsive",
+          "description": "Using the tools you know to debug tiny machines"
+        }
+      ],
+      "description": "Sure, you've moved past \"alert\" debugging and discovered console.log, but did you know you can replay XHR requests instead of having to repeat your steps to make the request? Or that you can proxy your local server through a browser configuration so your mobile phone can see it? This workshop is dedicated to learning the native developer tools baked in to the browser to make our life a little more bearable.",
+      "extendedDescription": "We will look at features of Chrome DevTools, what's available in Firefox debugging suite. We'll also look at remote mobile debugging using native tools and also look at the alternative tools where native support isn't available.\n\nThe workshop will mostly be about the foundation of debugging techniques, which apply way beyond just a single browser's debugger tool, but will raise your expectation of all web debugging environments."
+    }
+  ],
+  "posts": [
+    {
+      "title": "devtools: $$ > $",
+      "url": "https://remysharp.com/2016/10/10/one-devtools-trick"
+    },
+    {
+      "title": "Why Attend ffconf #7: Art",
+      "url": "https://remysharp.com/2016/10/05/why-attend-ffconf-7"
+    },
+    {
+      "title": "Why attend ffconf #6: PWA - 4-Oct 2016",
+      "url": "https://remysharp.com/2016/10/04/why-attend-ffconf-6"
+    },
+    {
+      "title": "Why attend ffconf #5: Emoji - 3-Oct 2016",
+      "url": "https://remysharp.com/2016/10/03/why-attend-ffconf-5"
+    },
+    {
+      "title": "Why attend ffconf #4: a11y - 27-Sep 2016",
+      "url": "https://remysharp.com/2016/09/27/why-attend-ffconf-4"
+    },
+    {
+      "title": "Why attend ffconf #3: devtools - 21-Sep 2016",
+      "url": "https://remysharp.com/2016/09/21/why-attend-ffconf-3"
+    },
+    {
+      "title": "Why attend ffconf #2: CSSnext - 12-Sep 2016",
+      "url": "https://remysharp.com/2016/09/12/why-attend-ffconf-2"
+    },
+    {
+      "title": "Why attend ffconf #1: CI…CD…C* - 6-Sep 2016",
+      "url": "https://remysharp.com/2016/09/06/why-attend-ffconf-1"
+    },
+    {
+      "title": "What's in a name? - 22-Jul 2016",
+      "url": "https://remysharp.com/2016/07/22/whats-in-a-name"
+    },
+    {
+      "title": "ffconf 2016 diversity scholarship - 6-Jul 2016",
+      "url": "https://remysharp.com/2016/07/06/diversity-scholarships-2016"
+    },
+    {
+      "title": "ffconf 2016 CFP - 25-Apr 2016",
+      "url": "https://remysharp.com/2016/04/25/ffconf-2016-cfp"
+    },
+    {
+      "title": "ffconf 2016 news - 15-Apr 2016",
+      "url": "https://remysharp.com/2016/04/15/ffconf-2016-news"
+    }
+  ],
+  "quotes": [
+    {
+      "text": "#ffconf was absolutely brilliant. Thanks all!",
+      "author": "Anna Shipman, 2015 Speaker & Lead Architect at GOV.UK",
+      "url": "https://twitter.com/annashipman/status/662689809450840064",
+      "photo": "anna-shipman.jpg"
+    },
+    {
+      "text": "Last Friday was my first #ffconf - was blown away by the quality and variety of talks. Fantastic achievement from the conf team",
+      "author": "James Da Costa, ffconf 2015 attendee",
+      "url": "https://twitter.com/jamesdacosta/status/663827059010101248",
+      "photo": "james-da-costa.jpg"
+    },
+    {
+      "text": "As I head home, thank you, again to @rem, @julieanne and the volunteers for @ffconf. Incredible event and I felt incredibly taken care of.",
+      "author": "John K Paul, 2015 Speaker & CTO of inRhythm",
+      "url": "https://twitter.com/johnkpaul/status/663265398784180224",
+      "photo": "john-k-paul.jpg"
+    },
+    {
+      "text": "Back home & wondering where to start with all the inspiration I got whilst at #ffconf. Thank you @julieanne & @rem for an excellent day.",
+      "author": "Hannah Wolfe, 2014 Speaker and Ghost CTO & co-founder",
+      "url": "https://twitter.com/ErisDS/status/531102677976252416",
+      "photo": "hannah-wolfe.jpg"
+    },
+    {
+      "text": "Fantastic set of speakers, interesting and exciting topics, great day @ffconf. Thanks and congratulations to @rem and @julieanne",
+      "author": "Phil Nash, developer evangelist for Twilio",
+      "url": "https://twitter.com/philnash/status/530777197607682048",
+      "photo": "phil-nash.jpg"
+    },
+    {
+      "text": "#ffconf is a wrap: what a truly inspirational event with so many interesting topics. Glad that I finally was able to attend.",
+      "author": "Robin Mehner, 2015 speaker",
+      "url": "https://twitter.com/rmehner/status/662700722107084800",
+      "photo": "robin-mehner.jpg"
+    },
+    {
+      "text": "Yes! #ffconf was amazing. Had an inspiring day listening to awesome people, talking about super interesting stuff. Almost too good.",
+      "author": "David McGeorge, five time attendee",
+      "url": "https://twitter.com/davymacca/status/530785298167656449",
+      "photo": "david-mcgeorge.jpg"
+    },
+    {
+      "text": "Must be the most comfy seats of any conference I attended - so glad I finally made it - #ffconf",
+      "author": "Prisca Schmarsow, 2013 attendee",
+      "url": "https://twitter.com/prisca_eyedea/status/398744015539273728",
+      "photo": "prisca-schmarsow.jpg"
+    },
+    {
+      "text": "I can pinpoint ffconf talks, which have changed the way I approach web development and the tools I use. That's why every year it has an unmovable place in my calendar.",
+      "author": "Glenn Jones, co-founder of Madgex & 2011 speaker",
+      "url": "https://twitter.com/glennjones",
+      "photo": "glenn-jones.jpg"
+    },
+    {
+      "text": "Practical, inspiring & progressive - its rare a tech conference delivers on all of them but @ffconf pulls it off. Quality gig 👌",
+      "author": "James Wragg - attendee of every ffconf",
+      "url": "https://twitter.com/jameswragg/status/752449764009078784",
+      "photo": "james-wragg.jpg"
+    },
+    {
+      "text": "I had SUCH a great day being geeky at #ffconf. …Best day!",
+      "author": "Aisling Brock, 2013 attendee",
+      "url": "https://twitter.com/aislingbrock/status/662734331987685376",
+      "photo": "aisling-brock.jpg"
+    },
+    {
+      "text": "Not sure how many juniors went to #ffconf but I feel honoured to be one of them. Great conference & superb inspiring talks! Bring it on ffconf 2016",
+      "author": "Natalia Waniczek, 2016 attendee",
+      "url": "https://twitter.com/natkuTala/status/662790424533336065",
+      "photo": "natalia-waniczek.jpg"
+    },
+    {
+      "text": "Really impressed with the diversity of speakers at #ffconf 👌",
+      "author": "Heather Lauren, 2016 attendee",
+      "url": "https://twitter.com/heatherlauren/status/662607875731271680",
+      "photo": "heather-lauren.jpg"
+    }
+  ]
+}

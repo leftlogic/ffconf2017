@@ -1,0 +1,99 @@
+/* Mediaqueries
+   ========================================================================== */
+@include mq-min-check(320px) {
+
+}
+
+
+@include mq-min-check(425px) {
+
+}
+
+
+@include mq-min-check(640px) {
+  .location-description {
+    float: right;
+  }
+
+}
+
+
+@include mq-min-check(768px) {
+  .locations {
+    font-size: 0;
+    padding-bottom: 50px;
+    text-align: center;
+
+    & > li {
+      display: inline-block;
+      font-size: 20px;
+      margin-left: 40px;
+      margin-top: 0;
+      vertical-align: top;
+      width: calc((100% - (40px * 2)) / 3);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .location {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  .location-description {
+    float: none;
+  }
+
+  .monty {
+    padding-bottom: 50px;
+
+    &:first-child {
+      // padding-top: 0;
+    }
+  }
+  .monty-3rd,
+  .monty-available {
+    padding-top: 50px;
+  }
+  .monty-available .sponsor-title {
+    padding-bottom: 0;
+  }
+  .sponsors-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sponsor {
+    margin: 0;
+    max-width: none;
+  }
+  .sponsor + .sponsor {
+    // margin-left: 10px;
+  }
+  .sponsor-1st {
+    height: 235px;
+    width: calc(50% - 20px);
+
+    img {
+      // max-width: 330px;
+    }
+  }
+  .sponsor-2nd {
+    height: 120px;
+    width: calc(25% - 20px);
+  }
+  .sponsor-3rd {
+    height: 75px;
+    width: calc(16.67% - 15px);
+  }
+
+  .sponsor-3rd {
+    img {
+      max-height: 60px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (min-height: 40em) {
+
+}

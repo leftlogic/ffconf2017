@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@import "var";
+@import "mixin";
+
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+html {
+  font: 18px/25px $f-main;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+abbr {
+  border-bottom: 1px dashed $c-black;
+  text-decoration: none;
+}
+
+/* Reset */
+h1, h2, h3, h4,
+p, strong, em, cite,
+ul, ol, li {
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@import "typography";
+@import "colors";
+
+/* Grid
+   ========================================================================== */
+.wrapper {
+  margin: 5% auto;
+  max-width: 1024px;
+  padding: 0;
+  width: 90%;
+}
+
+
+/* Header
+   ========================================================================== */
+
+
+
+/* Sections
+   ========================================================================== */
+
+
+/* Non Speaker Session
+   ========================================================================== */
+
+
+/* Speaker Session
+   ========================================================================== */
+
+
+
+/* Workshops
+   ========================================================================== */
+
+
+/* Locations
+   ========================================================================== */
+.locations {
+  padding-bottom: 25px;
+
+  & > li {
+    margin-top: 50px;
+  }
+}
+.location {
+  margin-top: 25px;
+}
+
+
+/* Cfp
+   ========================================================================== */
+
+
+
+/* Diversity
+   ========================================================================== */
+
+
+/* Sponsors
+   ========================================================================== */
+.main-sponsors {
+  margin: 0 auto;
+  max-width: $w-content;
+}
+.monty {
+  padding-top: 0;
+  text-align: center;
+
+  &:first-child {
+    padding-top: 25px;
+  }
+}
+.sponsor {
+  background: $c-white;
+  height: 150px;
+  margin: 25px auto;
+  max-width: 240px;
+  width: 100%; // this is for IE
+
+  a {
+    display: block;
+    height: 100%;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  img {
+    border: 0 none; // IE fix
+    max-height: 100%;
+    max-width: 100%;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    &::after {
+      align-items: center;
+      background: $c-white;
+      bottom: 0;
+      content: attr(alt);
+      display: flex;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+.monty-available a {
+  display: block;
+  padding-top: 25px;
+}
+
+
+/* Footer
+   ========================================================================== */
+
+
+/* Quotes
+   ========================================================================== */
+.quote-wrapper {
+  text-align: center;
+}
+.quote {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &-image-wrapper {
+    margin: 0 auto;
+    max-width: 136px;
+    position: relative;
+    width: 30%;
+
+    &:after {
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 50%;
+      left: -50vw;
+      position: absolute;
+      right: -50vw;
+      z-index: -1;
+    }
+  }
+
+  &-image {
+    background-size: cover;
+    border: 3px solid;
+    padding-top: calc(100% - 6px);
+  }
+
+  &-content-wrapper {
+    padding: 1em;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: $w-content;
+    padding-bottom: 1em;
+
+    &:before {
+      content: '\201C';
+    }
+    &:after {
+      content: '\201D';
+    }
+  }
+
+  a {
+    &, &:link, &:visited {
+      color: inherit;
+    }
+    &:hover, &:focus, &:active {
+    }
+  }
+}
+
+@import "mq";
