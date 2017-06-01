@@ -6,9 +6,6 @@
 *, *:after, *:before {
   @include box-sizing(border-box);
 }
-html {
-  font: 18px/25px $f-main;
-}
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +28,13 @@ ul, ol, li {
   padding: 0;
 }
 
+a {
+  color: inherit;
+}
+svg {
+  fill: currentColor;
+}
+
 @import "typography";
 @import "colors";
 
@@ -46,7 +50,46 @@ ul, ol, li {
 
 /* Header
    ========================================================================== */
+.nav-main-wrapper {
+  width: 100%;
+}
+.logo {
+  &-wrapper {
 
+  }
+  &-link {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+  & {
+    display: block;
+    max-height: 45vw;
+    padding: 1em 0;
+    width: 100%;
+  }
+}
+.nav-list {
+  a {
+    display: block;
+    padding: .5em 0;
+    text-align: center;
+  }
+}
+.tickets-button {
+  display: block;
+  padding: 15px 0;
+}
+.button {
+  text-align: center;
+
+  svg {
+    display: inline-block;
+    height: .7em;
+    margin-right: 1em;
+    width: .7em;
+  }
+}
 
 
 /* Sections
@@ -94,6 +137,7 @@ ul, ol, li {
 .main-sponsors {
   margin: 0 auto;
   max-width: $w-content;
+  width: 80%;
 }
 .monty {
   padding-top: 0;
@@ -155,6 +199,20 @@ ul, ol, li {
 
 /* Footer
    ========================================================================== */
+.footer {
+  background: rgba($c-black, .2);
+  color: inherit;
+  padding: 2em 0;
+}
+.previous-years__title,
+.previous-years__list,
+.previous-years__item {
+  display: inline-block;
+}
+.previous-years__title {
+  margin: 0;
+}
+
 
 
 /* Quotes
@@ -192,13 +250,14 @@ ul, ol, li {
   }
 
   &-content-wrapper {
-    padding: 1em;
+    padding: 1em 0;
   }
 
   p {
     margin: 0 auto;
     max-width: $w-content;
     padding-bottom: 1em;
+    width: 80%;
 
     &:before {
       content: '\201C';
@@ -216,5 +275,6 @@ ul, ol, li {
     }
   }
 }
+
 
 @import "mq";

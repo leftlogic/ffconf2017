@@ -1,11 +1,21 @@
 @import "var";
 /* Typography
    ========================================================================== */
+html {
+  font: 18px/25px $f-main;
+}
 a {
+  // text-decoration: none;
+}
+.nav-list a,
+.button {
   text-decoration: none;
 }
+.nav-list a,
+.button,
 .quote a,
-.sponsor-title {
+.sponsor-title,
+.footer-title {
   font-family: $f-title;
   text-transform: uppercase;
 }
@@ -17,4 +27,19 @@ a {
 }
 .quote a {
   font-size: 14px;
+  text-decoration: none;
+}
+.footer {
+  font-size: 12px;
+
+  &-title:before {
+    content: ':: ';
+  }
+
+  p {
+    padding: 1em 0;
+  }
+}
+.previous-years__title {
+  font-size: inherit;
 }

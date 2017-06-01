@@ -2,8 +2,26 @@
 /* Colors
    ========================================================================== */
 .page-sessions {
+  background: $c-yellow;
+  color: $c-white;
+
+  a {
+    // color: inherit;
+    &:hover, &:focus, &:active {
+      color: $c-cyan;
+    }
+  }
   .wrapper {
     background: $c-blue;
+  }
+  .tickets-button {
+    background: $c-cyan;
+    color: $c-blue;
+
+    &:hover, &:focus, &:active {
+      background: $c-white;
+      color: $c-purple;
+    }
   }
   .sponsor {
     box-shadow: 6px 6px 0 0 $c-cyan;
@@ -32,3 +50,4 @@
     }
   }
 }
+
