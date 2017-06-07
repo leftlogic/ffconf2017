@@ -181,7 +181,8 @@
       {
         "break": true,
         "title": "Coffee break (30 mins)",
-        "duration": 30
+        "duration": 30,
+        "svg": "coffee"
       },
       {
         "duration": 40,
@@ -216,7 +217,8 @@
       {
         "break": true,
         "duration": 90,
-        "title": "Lunch break (90 mins)"
+        "title": "Lunch break (90 mins)",
+        "svg": "lunch"
       },
       {
         "duration": 40,
@@ -251,7 +253,8 @@
       {
         "break": true,
         "duration": 30,
-        "title": "Cake break (30 mins)"
+        "title": "Cake break (30 mins)",
+        "svg": "coffee"
       },
       {
         "duration": 40,
@@ -294,7 +297,8 @@
         "end": "Late",
         "duration": 90,
         "afterparty": true,
-        "title": "After Party"
+        "title": "After Party",
+        "svg": "high-five"
       }
     ]
   },

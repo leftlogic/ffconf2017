@@ -1,5 +1,7 @@
 block vars
   - var klass = 'page-workshops'
+  - var ikons = []
+  - var page = 'workshops'
 
 extends _partials/layout.jade
 
@@ -7,5 +9,5 @@ block content
   include _partials/quote
 
   div.main-wrapper
-    include _partials/workshops
+    include _partials/workshops-summary
   +quote()

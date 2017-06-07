@@ -70,17 +70,24 @@ svg {
   }
 }
 .nav-list {
-  a {
-    display: block;
-    padding: .5em 0;
+  li {
+    padding-bottom: .5em;
     text-align: center;
   }
-}
-.tickets-button {
-  display: block;
-  padding: 15px 0;
+  a {
+    display: inline-block;
+    padding: .5em 0 0;
+    text-align: center;
+
+    &.selected {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+    }
+  }
 }
 .button {
+  display: inline-block;
+  padding: .75em 1.5em;
   text-align: center;
 
   svg {
@@ -90,23 +97,127 @@ svg {
     width: .7em;
   }
 }
+.tickets-button {
+  display: block;
+  padding: 15px 0;
+}
 
 
 /* Sections
    ========================================================================== */
+.main-wrapper {
+  margin-top: 2em;
+}
+.session-wrapper,
+.workshop-wrapper,
+.monty {
+  padding: 25px 0;
+}
+.section-title {
+  margin-bottom: 2em;
+}
+.section-title-logo {
+  height: 2em;
+  width: 2em;
+}
+.masthead,
+.main,
+.quote-wrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+}
 
 
 /* Non Speaker Session
    ========================================================================== */
+.schedule-logo {
+  height: 2em;
+  margin-right: 1em;
+  vertical-align: middle;
+  width: 2em;
+}
 
 
 /* Speaker Session
    ========================================================================== */
+.sessions-wrapper {
+  counter-reset: session;
+}
+.session-wrapper {
+}
+.sub-hr {
+  border-top: 2px dashed;
 
+  &:first-child {
+    border-top-style: solid;
+  }
+  &:last-child {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
+}
+.session-header-line {
+  margin-bottom: 1em;
+}
+.sessions-titles {
+  .session-about-wrapper {
+    padding-left: 60px;
+    position: relative;
+  }
+  .session-title {
+    &:before {
+      counter-increment: session;
+      content: "/0" counter(session);
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+.session-speaker-name {
+  span {
+    margin-right: 1em;
+  }
+}
+.session-links {
+  margin: 12.5px 0;
+
+  a {
+    display: block;
+  }
+}
+.session-speaker-twitter {
+  &:before {
+    content: 't:';
+    text-transform: lowercase;
+  }
+}
 
 
 /* Workshops
    ========================================================================== */
+.workshop-header {
+  padding: .5em;
+}
+.workshop-header-image-wrapper {
+  display: none;
+}
+.workshop-wrapper .button {
+  margin: 25px 0 9px;
+}
+.workshop-full .workshop-details,
+.workshop-content p {
+  padding-top: 25px;
+}
+.workshop-full {
+  margin-top: 25px;
+  padding-top: 50px;
+
+  &:first-of-type {
+    border-top: 0 none;
+    margin-top: 0;
+    padding-top: 25px;
+  }
+}
 
 
 /* Locations
@@ -119,7 +230,17 @@ svg {
   }
 }
 .location {
+  display: flex;
   margin-top: 25px;
+}
+.location-logo {
+  height: 1.5em;
+  margin-right: 2px;
+  margin-top: 5px;
+  width: 1.5em;
+}
+.location-content {
+
 }
 
 
@@ -130,6 +251,16 @@ svg {
 
 /* Diversity
    ========================================================================== */
+.diversity {
+  padding-bottom: 3em;
+
+  p {
+    padding-bottom: 2em;
+  }
+  h3 {
+    padding-bottom: 1em;
+  }
+}
 
 
 /* Sponsors
@@ -202,7 +333,7 @@ svg {
 .footer {
   background: rgba($c-black, .2);
   color: inherit;
-  padding: 2em 0;
+  padding: 2em;
 }
 .previous-years__title,
 .previous-years__list,
@@ -239,7 +370,6 @@ svg {
       left: -50vw;
       position: absolute;
       right: -50vw;
-      z-index: -1;
     }
   }
 
@@ -247,6 +377,8 @@ svg {
     background-size: cover;
     border: 3px solid;
     padding-top: calc(100% - 6px);
+    position: relative;
+    z-index: 1;
   }
 
   &-content-wrapper {

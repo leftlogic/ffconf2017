@@ -21,6 +21,6 @@ section.main(role='region', aria-labelledby='workshops')
           div.workshop-details
             a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
           div
-            a.button(href='/workshops#' + workshop.slug) More Info
+            a.button(href='/workshop-' + workshop.slug) More Info
         div.workshop-header-image-wrapper
           div.workshop-header-image

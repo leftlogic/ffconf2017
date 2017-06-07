@@ -8,21 +8,36 @@ a {
   // text-decoration: none;
 }
 .nav-list a,
-.button {
+.button,
+.session-speaker-twitter,
+.workshop-speaker-name,
+.location a {
   text-decoration: none;
 }
 .nav-list a,
 .button,
 .quote a,
+.section-title,
+.break,
+.session-header,
+.workshop-title,
+.workshop-speaker-name,
+.location-title,
 .sponsor-title,
 .monty-available a,
+.diversity h3,
 .footer-title {
   font-family: $f-title;
   text-transform: uppercase;
 }
+.section-title,
+.session-title:before,
 .monty-1st .sponsor-title {
   font-size: 28px;
 }
+.break,
+.session-title,
+.session-time,
 .monty-2nd .sponsor-title {
   font-size: 23px;
 }
@@ -43,4 +58,11 @@ a {
 }
 .previous-years__title {
   font-size: inherit;
+}
+.location,
+.location a {
+  text-transform: uppercase;
+}
+.location-description {
+  font-size: 14px;
 }

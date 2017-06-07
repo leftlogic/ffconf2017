@@ -1,8 +1,11 @@
 - var sessionTime = completeDate.clone()
 != partial('/js/_idify')
 
-section.main(role='region', aria-labelledby='sessions')
-  h2#sessions.section-title(role='heading', aria-level='2') Sessions
+section.main(role='region', aria-labelledby='sessions', class='sessions-' + config.mode)
+  h2#sessions.section-title(role='heading', aria-level='2')
+    svg.section-title-logo
+      use(xlink:href='#icon-bulb-large')
+    | Sessions
   //- if config.phase < 4
   //-   div.button-wrapper
   //-     if config.phase >= 1
@@ -32,7 +35,11 @@ section.main(role='region', aria-labelledby='sessions')
         li.session-wrapper.sub-hr.js-session(id=idify(session.title), data-date1=dates[0] + ' ' + session.start, data-date2=dates[1] + ' ' + session.start)
           if session.break
             header.break
-              h3.schedule-title(role='heading', aria-level='3')= session.title
+              h3.schedule-title(role='heading', aria-level='3')
+                if session.svg
+                  svg.schedule-logo
+                    use(xlink:href='#icon-' + session.svg)
+                = session.title
               div.session-time!=session.start + ' &mdash; ' + session.end
           else
             if config.phase >= 3 && session.speaker.photo
@@ -40,35 +47,39 @@ section.main(role='region', aria-labelledby='sessions')
                 div.session-speaker-img(style='background-image:url(/images/speakers/' + session.speaker.photo + ')' title="Blurry picture? Speaker revealed soon!")
             .session-about-wrapper
               header.session-header
-                h3.session-title(role='heading', aria-level='3')= session.title
-                if config.phase >= 3 && session.speaker.name
-                  div.session-speaker-name
-                    if false && session.speaker.twitter
-                      a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
-                    else
-                      span= session.speaker.name
-                if config.phase == 3
-                  div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
-                if config.phase == 4
-                  if session.slides || session.audio || session.video
-                    div.session-links
-                      if session.slides
-                        a(href=session.slides) Slides
-                      if session.audio
-                        a(href=session.audio) Audio
-                      if session.video
-                        a(href=session.video) Video
+                div.session-header-line
+                  h3.session-title(role='heading', aria-level='3')= session.title
+                  if config.phase == 3
+                    div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
+                div.session-header-line
+                  if config.phase >= 3 && session.speaker.name
+                    div.session-speaker-name
+                      if false && session.speaker.twitter
+                        a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
+                      else
+                        span= session.speaker.name
+                      if session.speaker.twitter
+                        a.session-speaker-twitter(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= '@' + session.speaker.twitter
+                  if config.phase == 4
+                    if session.slides || session.audio || session.video
+                      div.session-links
+                        if session.slides
+                          a(href=session.slides) Slides
+                        if session.audio
+                          a(href=session.audio) Audio
+                        if session.video
+                          a(href=session.video) Video
               div.session-content
                 if session.description
                   !=global.marked(session.description)
 
-    //- if totalSessions < 8
-    //-   li.session-wrapper.sub-hr.js-session(id='slugMoreToCome')
-    //-     h3.more-sessions More Sessions announced soon.
+    if totalSessions < 8
+      li.session-wrapper.sub-hr.js-session(id='slugMoreToCome')
+        h3.more-sessions More Sessions announced soon.
 
-    li.session-wrapper.sub-hr(id='related-blog-posts')
-      h3.session-wrapper Related blog posts
-      ol.posts
-        each post in public._data.posts
-          li
-            a(href=post.url)= post.title
+  div.session-wrapper(id='related-blog-posts')
+    h3.session-wrapper Related blog posts
+    ol.posts
+      each post in public._data.posts
+        li
+          a(href=post.url)= post.title

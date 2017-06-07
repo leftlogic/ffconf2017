@@ -67,7 +67,8 @@ header.masthead(role='banner', class='phase-'+config.phase)
       if config.phase >= 0.5
         ul.nav-list#nav-list
           each item in menu
+            - var selected = ('/' + page === item.url) ? 'selected' : ''
             != ' '
             li
-              a(data-scroll href=item.url)=item.title
+              a(data-scroll href=item.url class=selected)=item.title
 
