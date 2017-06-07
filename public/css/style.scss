@@ -41,6 +41,7 @@ svg {
 /* Grid
    ========================================================================== */
 .wrapper {
+  box-shadow: 0 0 20px 0 rgba($c-black, .4);
   margin: 5% auto;
   max-width: 1024px;
   padding: 0;
@@ -246,7 +247,27 @@ svg {
 
 /* Cfp
    ========================================================================== */
+.cfp {
+  padding-bottom: 3em;
 
+  p, ul {
+    padding-bottom: 2em;
+  }
+  ul {
+    margin-left: 1em;
+  }
+  li {
+    padding: .5em 0;
+
+    &:before {
+      content: '\25A0';
+      padding-right: 1em;
+    }
+  }
+  h3 {
+    padding-bottom: 1em;
+  }
+}
 
 
 /* Diversity

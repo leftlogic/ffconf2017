@@ -286,3 +286,66 @@
     color: $c-white;
   }
 }
+
+
+.page-cfp {
+  background: $c-cyan;
+  color: $c-white;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-cyan;
+    }
+  }
+  .wrapper {
+    background: $c-fuchsia;
+  }
+  .tickets-button {
+    background: $c-yellow;
+    color: $c-fuchsia;
+
+    &:hover, &:focus, &:active {
+      background: $c-magenta;
+      color: $c-yellow;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-yellow;
+  }
+  .section-title,
+  .cfp h3,
+  .cfp li:before {
+    color: $c-yellow;
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-yellow;
+
+    &-title {
+      color: $c-yellow;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    color: $c-blue;
+
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-cyan;
+    }
+
+    &-image {
+      border-color: $c-yellow;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-magenta;
+      }
+    }
+  }
+  .footer {
+    color: $c-white;
+  }
+}
