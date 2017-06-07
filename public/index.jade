@@ -1,23 +1,13 @@
+block vars
+  - var klass = 'page-home'
+  - var ikons = []
+  - var page = 'home'
+
 extends _partials/layout.jade
 
 block content
   include _partials/quote
 
-  if config.phase >= 0.5
-    div.main-wrapper
-      include _partials/sessions
-    +quote()
-
-  if config.phase >= 0.5
-    div.main-wrapper
-      include _partials/workshops-summary
-    +quote()
-
-  if config.phase >= 0.5
-    div.main-wrapper
-      include _partials/locations
-    +quote()
-
   div.main-wrapper
-    include _partials/diversity
+    include _partials/cfp
   +quote()
