@@ -245,6 +245,27 @@ svg {
 }
 
 
+/* Scholarship
+   ========================================================================== */
+.scholarship {
+  padding-bottom: 3em;
+
+  p, ol {
+    padding-bottom: 2em;
+  }
+  ol {
+    margin-left: 2em;
+  }
+  li {
+    list-style-type: decimal;
+    padding: .5em 0;
+  }
+  h3 {
+    padding-bottom: 1em;
+  }
+}
+
+
 /* Cfp
    ========================================================================== */
 .cfp {

@@ -349,3 +349,66 @@
     color: $c-white;
   }
 }
+
+
+.page-scholarship {
+  background: $c-blue;
+  color: $c-white;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-cyan;
+    }
+  }
+  .wrapper {
+    background: $c-magenta;
+  }
+  .tickets-button {
+    background: $c-yellow;
+    color: $c-blue;
+
+    &:hover, &:focus, &:active {
+      background: $c-cyan;
+      color: $c-magenta;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-yellow;
+  }
+  .section-title,
+  .scholarship h3,
+  .scholarship li:before {
+    color: $c-yellow;
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-yellow;
+
+    &-title {
+      color: $c-yellow;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    color: $c-blue;
+
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-yellow;
+    }
+
+    &-image {
+      border-color: $c-cyan;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-magenta;
+      }
+    }
+  }
+  .footer {
+    color: $c-white;
+  }
+}
