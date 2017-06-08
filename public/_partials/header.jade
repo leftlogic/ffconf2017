@@ -1,0 +1,74 @@
+- var menu = [{ 'title': 'sessions', 'url': '/sessions' }, { 'title': 'workshops', 'url': '/workshops' }, { 'title': 'locations', 'url': '/locations' }, { 'title': 'diversity', 'url': '/diversity' }]
+- var text = {}
+- text.intro1 = '1 day conference'
+- text.intro2 = 'run twice'
+- text.tag = '#ffconf'
+- text.location1 = 'Duke of York\'s'
+- text.location2 = 'Brighton, UK'
+- text.date = 'November 10 & 11'
+
+- var line = 'Tickets @ £160+VAT will be sold on the 15th and 22nd July at 11am BST.'
+- var button = 'On sale 13 July'
+- var buy = false
+- var buttonLink = false
+
+if config.phase == 1
+  if config.soldout.conference
+    if config.soldout.workshops
+      - line = 'Tickets for this phase sold out. More go on sale 22nd July.'
+      - button = 'Sold Out'
+      - buy = false
+    else
+      - line = 'Workshop (+conf pass) tickets available now. Next batch on sale 22nd July.'
+      - button = 'Buy Tickets'
+      - buy = true
+  else
+    - line = 'Conference & workshop (+conf pass) tickets available to buy!'
+    - button = 'Buy Tickets'
+    - buy = true
+if config.phase >= 2 && config.phase < 4
+  if config.soldout.conference
+    if config.soldout.workshops
+      - line = 'All tickets for this years\' conference have been sold.'
+      - button = 'Sold Out'
+      - buy = false
+    else
+      - line = 'Workshop (+conf pass) available to buy. Last few remaining.'
+      - button = 'Buy Tickets'
+      - buy = true
+  else
+    - line = 'Conference & workshop (+conf pass) available now. Last chance batch.'
+    - button = 'Buy Tickets'
+    - buy = true
+if config.phase == 4
+    - line = ''
+    - button = 'Watch Now'
+    - buttonLink = 'https://www.youtube.com/playlist?list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX'
+    - buy = false
+
+
+header.masthead(role='banner', class='phase-'+config.phase)
+
+  div.nav-main-wrapper
+    nav.nav-main(role='navigation')
+      div.logo-wrapper
+        a.logo-link(href='/')
+          <svg class="logo"><use xlink:href="#icon-logo"></use></svg>
+      div.tickets-wrapper
+        if button != ''
+          if buy
+            a.button.tickets-button(href=ticketUrl, target='_blank')
+              <svg><use xlink:href="#icon-arrow-right"></use></svg>
+              =button
+          else if buttonLink
+            a.button.tickets-button(href=buttonLink, target='_blank')!= button
+          else
+            span.button.tickets-button!= button
+      if config.phase >= 0.5
+        ul.nav-list#nav-list
+          each item in menu
+            - var selected = ('/' + page === item.url) ? 'selected' : ''
+            != ' '
+            li
+              a(data-scroll href=item.url class=selected)=item.title
+

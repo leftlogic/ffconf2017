@@ -1,0 +1,20 @@
+section.main(role='region', aria-labelledby='locations')
+  h2#locations.section-title(role='heading', aria-level='2')
+    svg.section-title-logo
+      use(xlink:href='#icon-location-large')
+    | Locations
+  ul.locations
+    each locations in public._data.locations
+      li
+        h3.location-title(role='heading', aria-level='3')=locations.type
+        ul
+          each location in locations.location
+            li.vcard.location
+              svg.location-logo
+                use(xlink:href='#icon-location-small')
+              div.location-content
+                a.name.url.org.fn(href=location.url, target='_blank')=location.name
+                div.location-description
+                  p.detail=location.detail
+                  if location.extra-discount
+                    p.extra-discount=location.extra-discount

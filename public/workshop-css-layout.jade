@@ -1,0 +1,14 @@
+block vars
+  - var klass = 'page-workshops'
+  - var ikons = ['coffee', 'lunch', 'high-five', 'bulb-large']
+  - var page = 'workshops'
+  - var workshop = public._data.workshops[0]
+
+extends _partials/layout.jade
+
+block content
+  include _partials/quote
+
+  div.main-wrapper
+    include _partials/workshop
+  +quote()

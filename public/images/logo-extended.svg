@@ -1,0 +1,20 @@
+<svg viewBox="0 0 275 81" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="logo-extended-shadow" x="-1.9%" y="-11.5%" width="103.9%" height="127.1%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="logo-extended-path" d="M37.598 16.73v6.836H10.254v13.672h20.508v6.836H10.254v20.508H3.418V16.73h34.18zm41.015 0v6.836H51.27v13.672h20.507v6.836H51.27v20.508h-6.836V16.73h34.18zm17.09 41.016h13.672v-3.418h3.418V50.91h6.836v6.836h-3.42v3.418h-3.417v3.418H92.285v-3.418h-3.418v-3.418H85.45v-34.18h3.417v-3.418h3.418V16.73h20.508v3.418h3.418v3.418h3.42v6.836h-6.837v-3.418h-3.418v-3.418H95.703v3.418h-3.418v27.344h3.418v3.418zm54.688-34.18h-13.67v3.418h-3.42v27.344h3.42v3.418h13.67v-3.418h3.42V26.984h-3.42v-3.418zm-17.09-3.418V16.73h20.51v3.418h3.417v3.418h3.418v34.18h-3.418v3.418h-3.418v3.418H133.3v-3.418h-3.417v-3.418h-3.418v-34.18h3.418v-3.418h3.418zm41.016 17.09v27.344h-6.836V16.73h6.836v10.254h3.418v3.418h3.418v3.418h3.418v3.418h3.418v3.418h3.418v3.418h3.418V16.73h6.836v47.852h-6.836V54.328h-3.418V50.91h-3.418v-3.418h-3.418v-3.418h-3.418v-3.418h-3.418v-3.418h-3.418zm68.36-20.508v6.836h-27.344v13.672h20.508v6.836h-20.508v20.508h-6.836V16.73h34.18z"/>
+  </defs>
+  <g filter="url(#logo-extended-shadow)" transform="translate(5 -10)" fill-rule="evenodd">
+    <use xlink:href="#logo-extended-path" fill="#F305E8" transform="translate(19 15.65)"/>
+    <use xlink:href="#logo-extended-path" fill="#0F0" transform="translate(12.55 10.45)"/>
+    <use xlink:href="#logo-extended-path" fill="#F00" transform="translate(6.4 5.2)"/>
+    <use xlink:href="#logo-extended-path" fill="#FEFF00"/>
+  </g>
+</svg>

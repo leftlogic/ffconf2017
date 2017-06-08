@@ -1,0 +1,29 @@
+style
+  each workshop in public._data.workshops
+    = '#' + workshop.slug + ' .workshop-header-image{'
+    = 'background-image:url(/images/workshops/1x-' + workshop.speaker.photo + ');'
+    = '}'
+
+  = '@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {'
+  each workshop in public._data.workshops
+    = '#' + workshop.slug + ' .workshop-header-image{'
+    = 'background-image:url(/images/workshops/2x-' + workshop.speaker.photo + ');'
+    = '}'
+  = '}'
+
+section.main(role='region', aria-labelledby='workshops')
+  h2#workshops.section-title(role='heading', aria-level='2') Workshops
+
+  p.workshops-intro All workshops are run on 8 November and include a conference pass for the 9 November for £445+VAT. You can request to change the conference pass day, which will be granted based on availability.
+
+  each workshop in public._data.workshops
+    section.workshop-wrapper.workshop-summary(id=workshop.slug)
+      header.workshop-header
+        div.workshop-header-content
+          h3.workshop-title(role='heading', aria-level='3')= workshop.title
+          div.workshop-details
+            a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
+          div
+            a.button(href='/workshop-' + workshop.slug) More Info
+        div.workshop-header-image-wrapper
+          div.workshop-header-image

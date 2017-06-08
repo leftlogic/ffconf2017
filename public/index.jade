@@ -1,0 +1,13 @@
+block vars
+  - var klass = 'page-cfp'
+  - var ikons = []
+  - var page = 'home'
+
+extends _partials/layout.jade
+
+block content
+  include _partials/quote
+
+  div.main-wrapper
+    include _partials/cfp
+  +quote()

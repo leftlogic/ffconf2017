@@ -1,0 +1,13 @@
+block vars
+  - var klass = 'page-sessions'
+  - var ikons = ['coffee', 'lunch', 'high-five', 'bulb-large']
+  - var page = 'sessions'
+
+extends _partials/layout.jade
+
+block content
+  include _partials/quote
+
+  div.main-wrapper
+    include _partials/sessions
+  +quote()

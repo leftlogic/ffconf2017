@@ -1,0 +1,13 @@
+block vars
+  - var klass = 'page-scholarship'
+  - var ikons = ['heart-large', 'question', 'apply', 'help', 'thumb-up']
+  - var page = 'scholarship'
+
+extends _partials/layout.jade
+
+block content
+  include _partials/quote
+
+  div.main-wrapper
+    include _partials/scholarship
+  +quote()

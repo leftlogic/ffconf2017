@@ -1,0 +1,13 @@
+block vars
+  - var klass = 'page-diversity'
+  - var ikons = ['heart-large']
+  - var page = 'diversity'
+
+extends _partials/layout.jade
+
+block content
+  include _partials/quote
+
+  div.main-wrapper
+    include _partials/diversity
+  +quote()

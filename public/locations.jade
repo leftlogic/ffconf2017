@@ -1,0 +1,13 @@
+block vars
+  - var klass = 'page-locations'
+  - var ikons = ['location-large', 'location-small']
+  - var page = 'locations'
+
+extends _partials/layout.jade
+
+block content
+  include _partials/quote
+
+  div.main-wrapper
+    include _partials/locations
+  +quote()

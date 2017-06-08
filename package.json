@@ -1,18 +1,27 @@
 {
   "name": "@remy/ffconf2017",
-  "version": "1.0.6",
+  "version": "0.0.1",
   "description": "ffconf2017",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node ."
+    "start": "node server.js",
+    "env": "env"
   },
   "engines": {
     "node": "7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leftlogic/ffconf2017.git"
   },
   "author": "Remy Sharp",
   "license": "MIT",
   "homepage": "https://2017.ffconf.org",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.3",
+    "harp": "^0.24.0",
+    "harp-static": "^0.1.0",
+    "jstransformer-marked": "^1.0.2",
+    "moment": "^2.18.1"
   }
 }

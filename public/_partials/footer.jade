@@ -1,0 +1,19 @@
+footer.footer
+  h4.footer-title Footnote
+  p.blurb
+    a(href='', target='_blank') #ffconf
+    |  is run by Left Logic, a small Brighton (UK) based development company, specialising in Node based applications and bleeding edge front end technology.
+
+  p.codeofconduct
+    | By attending any of our events (workshops & conference & fringe events) you are agreeing to our <a href="http://confcodeofconduct.com" target="_blank">code of conduct</a>.
+
+  p.curators
+    | Curated and created with much love, tears and sweat by <a href="https://twitter.com/rem" target="_blank">Remy</a> & <a href="https://twitter.com/Julieanne" target="_blank">Julie</a> of <a href="http://leftlogic.com" target="_blank">Left Logic</a>
+
+  nav.previous-years
+    h5.previous-years__title Previous years:
+    ul.previous-years__list
+      - for (var i = 2016; i >= 2009; i--) {
+        li.previous-years__item
+          a.previous-years__link(href='https://' + i + '.ffconf.org/')= i
+      - }

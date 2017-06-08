@@ -1,0 +1,11 @@
+<symbol id="icon-logo" viewBox="0 0 44 27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="logo-path" d="M18.262 5.098v3.32H4.98v6.64h9.96v3.32H4.98v9.962H1.66V5.098h16.602zm19.922 0v3.32H24.902v6.64h9.96v3.32h-9.96v9.962h-3.32V5.098h16.602z"/>
+  </defs>
+  <g transform="translate(-1 -5)" fill-rule="evenodd">
+    <use xlink:href="#logo-path" fill="#F305E8" transform="translate(7.85 3.65)"/>
+    <use xlink:href="#logo-path" fill="#0F0" transform="translate(5.2 2.45)"/>
+    <use xlink:href="#logo-path" fill="#F00" transform="translate(2.6 1.2)"/>
+    <use xlink:href="#logo-path" fill="#FEFF00"/>
+  </g>
+</symbol>

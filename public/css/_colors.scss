@@ -1,0 +1,414 @@
+@import "var";
+/* Colors
+   ========================================================================== */
+.page-sessions {
+  background: $c-yellow;
+  color: $c-white;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-cyan;
+    }
+  }
+  .wrapper {
+    background: $c-blue;
+  }
+  .tickets-button {
+    background: $c-cyan;
+    color: $c-blue;
+
+    &:hover, &:focus, &:active {
+      background: $c-white;
+      color: $c-purple;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-cyan;
+  }
+  .section-title {
+    color: $c-cyan;
+  }
+  .schedule-title,
+  .session-title {
+    color: $c-yellow;
+  }
+  .sub-hr {
+    border-color: rgba($c-cyan, .5);
+  }
+  .session-header a {
+    color: $c-cyan;
+
+    &:hover, &:focus, &:active {
+      color: $c-yellow;
+    }
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-cyan;
+
+    &-title {
+      color: $c-yellow;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-cyan;
+    }
+
+    &-image {
+      border-color: $c-yellow;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-purple;
+      }
+    }
+  }
+}
+
+
+.page-workshops {
+  background: $c-blue;
+  color: $c-blue;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-purple;
+    }
+  }
+  .wrapper {
+    background: $c-cyan;
+  }
+  .tickets-button {
+    background: $c-blue;
+    color: $c-cyan;
+
+    &:hover, &:focus, &:active {
+      background: $c-magenta;
+      color: $c-blue;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-magenta;
+  }
+  .section-title {
+    color: $c-blue;
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-blue;
+
+    &-title {
+      color: $c-blue;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    color: $c-yellow;
+
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-blue;
+    }
+
+    &-image {
+      border-color: $c-yellow;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-cyan;
+      }
+    }
+  }
+  .footer {
+    color: $c-white;
+  }
+
+  .workshop-header {
+    background: $c-magenta;
+    color: $c-yellow;
+
+    .button {
+      background: $c-white;
+      color: $c-magenta;
+
+      &:hover, &:focus, &:active {
+        background: $c-cyan;
+      }
+    }
+  }
+  .workshop-summary:nth-of-type(even) {
+    .workshop-header {
+      background: $c-blue;
+
+      .button {
+        color: $c-blue;
+      }
+    }
+  }
+  .workshop-speaker-name {
+    color: $c-white;
+  }
+}
+
+
+.page-locations {
+  background: $c-grey-light;
+  color: $c-white;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-magenta;
+    }
+  }
+  .wrapper {
+    background: $c-grey;
+  }
+  .tickets-button {
+    background: $c-green;
+    color: $c-grey;
+
+    &:hover, &:focus, &:active {
+      background: $c-blue;
+      color: $c-green;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-green;
+  }
+  .section-title {
+    color: $c-green;
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-green;
+
+    &-title {
+      color: $c-green;
+    }
+  }
+  .quote-wrapper {
+    color: $c-grey;
+  }
+  .quote {
+    color: $c-grey;
+
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-green;
+    }
+
+    &-image {
+      border-color: $c-yellow;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-purple;
+      }
+    }
+  }
+  .footer {
+    color: $c-white;
+  }
+
+  .location-title {
+    color: $c-green;
+  }
+  .location-logo {
+    color: $c-green;
+  }
+}
+
+
+.page-diversity {
+  background: $c-magenta;
+  color: $c-white;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-magenta;
+    }
+  }
+  .wrapper {
+    background: $c-purple;
+  }
+  .tickets-button {
+    background: $c-yellow;
+    color: $c-purple;
+
+    &:hover, &:focus, &:active {
+      background: $c-magenta;
+      color: $c-yellow;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-yellow;
+  }
+  .section-title,
+  .diversity h3 {
+    color: $c-yellow;
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-yellow;
+
+    &-title {
+      color: $c-yellow;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    color: $c-blue;
+
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-yellow;
+    }
+
+    &-image {
+      border-color: $c-cyan;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-magenta;
+      }
+    }
+  }
+  .footer {
+    color: $c-white;
+  }
+}
+
+
+.page-cfp {
+  background: $c-cyan;
+  color: $c-white;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-cyan;
+    }
+  }
+  .wrapper {
+    background: $c-fuchsia;
+  }
+  .tickets-button {
+    background: $c-yellow;
+    color: $c-fuchsia;
+
+    &:hover, &:focus, &:active {
+      background: $c-magenta;
+      color: $c-yellow;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-yellow;
+  }
+  .section-title,
+  .cfp h3,
+  .cfp li:before {
+    color: $c-yellow;
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-yellow;
+
+    &-title {
+      color: $c-yellow;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    color: $c-blue;
+
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-cyan;
+    }
+
+    &-image {
+      border-color: $c-yellow;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-magenta;
+      }
+    }
+  }
+  .footer {
+    color: $c-white;
+  }
+}
+
+
+.page-scholarship {
+  background: $c-blue;
+  color: $c-white;
+
+  a {
+    &:hover, &:focus, &:active {
+      color: $c-cyan;
+    }
+  }
+  .wrapper {
+    background: $c-magenta;
+  }
+  .tickets-button {
+    background: $c-yellow;
+    color: $c-blue;
+
+    &:hover, &:focus, &:active {
+      background: $c-cyan;
+      color: $c-magenta;
+    }
+  }
+  .nav-list a.selected {
+    border-bottom-color: $c-yellow;
+  }
+  .section-title,
+  .scholarship h3,
+  .scholarship li:before {
+    color: $c-yellow;
+  }
+  .sponsor {
+    box-shadow: 4px 4px 0 0 $c-yellow;
+
+    &-title {
+      color: $c-yellow;
+    }
+  }
+  .quote-wrapper {
+    color: $c-blue;
+  }
+  .quote {
+    color: $c-blue;
+
+    &-image-wrapper:after,
+    &-content-wrapper {
+      background: $c-yellow;
+    }
+
+    &-image {
+      border-color: $c-cyan;
+    }
+
+    a {
+      &:hover, &:focus, &:active {
+        color: $c-magenta;
+      }
+    }
+  }
+  .footer {
+    color: $c-white;
+  }
+}
