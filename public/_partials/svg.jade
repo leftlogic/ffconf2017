@@ -62,3 +62,8 @@ if ikons.indexOf('thumb-up') !== -1
 
 </defs>
 </svg>
+
+
+mixin icon(className, iconName)
+  svg(aria-hidden='true' class=className)
+    use(xlink:href='#icon-' + iconName)

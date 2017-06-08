@@ -1,7 +1,6 @@
 section.main(role='region', aria-labelledby='locations')
   h2#locations.section-title(role='heading', aria-level='2')
-    svg.section-title-logo
-      use(xlink:href='#icon-location-large')
+    +icon('section-title-logo', 'location-large')
     | Locations
   ul.locations
     each locations in public._data.locations
@@ -10,8 +9,7 @@ section.main(role='region', aria-labelledby='locations')
         ul
           each location in locations.location
             li.vcard.location
-              svg.location-logo
-                use(xlink:href='#icon-location-small')
+              +icon('location-logo', 'location-small')
               div.location-content
                 a.name.url.org.fn(href=location.url, target='_blank')=location.name
                 div.location-description

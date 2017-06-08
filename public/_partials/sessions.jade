@@ -3,8 +3,7 @@
 
 section.main(role='region', aria-labelledby='sessions', class='sessions-' + config.mode)
   h2#sessions.section-title(role='heading', aria-level='2')
-    svg.section-title-logo
-      use(xlink:href='#icon-bulb-large')
+    +icon('section-title-logo', 'bulb-large')
     | Sessions
   //- if config.phase < 4
   //-   div.button-wrapper
@@ -37,8 +36,7 @@ section.main(role='region', aria-labelledby='sessions', class='sessions-' + conf
             header.break
               h3.schedule-title(role='heading', aria-level='3')
                 if session.svg
-                  svg.schedule-logo
-                    use(xlink:href='#icon-' + session.svg)
+                  +icon('schedule-logo', session.svg)
                 = session.title
               div.session-time!=session.start + ' &mdash; ' + session.end
           else

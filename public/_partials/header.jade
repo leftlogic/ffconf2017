@@ -58,7 +58,7 @@ header.masthead(role='banner', class='phase-'+config.phase)
         if button != ''
           if buy
             a.button.tickets-button(href=ticketUrl, target='_blank')
-              <svg><use xlink:href="#icon-arrow-right"></use></svg>
+              +icon('', 'arrow-right')
               =button
           else if buttonLink
             a.button.tickets-button(href=buttonLink, target='_blank')!= button
