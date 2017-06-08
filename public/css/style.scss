@@ -453,34 +453,26 @@ svg {
 /* Homepage
    ========================================================================== */
 .page-home {
-  background: url(/images/home-bg.png) no-repeat;
+  background: url(/images/home-bg.png);
   background-size: cover;
   background-position: center;
   height: 100%;
-  display: flex;
 
   body {
-    align-self: center;
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
+    margin: 5vh auto;
+    min-height: 90vh;
+    padding: 1em 0;
+    text-align: center;
   }
 
   .main-wrapper {
     margin-top: 0;
-    flex-grow: 1;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
   }
 
   h1 .logo {
-    height: 100%; // IDK
-    width: 100%;
-    max-height: none;
+    max-height: 25vh;
     padding: 0;
+    width: 100%;
   }
 
   h2 {
@@ -489,14 +481,20 @@ svg {
   }
 
   .home {
-    align-self: center;
-    width: 40%;
   }
 
   .tickets-button {
-    padding: 0 1.05em 0 1rem;
-    margin-left: 1.4rem;
-    display: inline-block;
+    margin-top: 2em;
+  }
+  .conf-time,
+  .conf-location {
+    display: block;
+  }
+  .conf-location {
+    &:before {
+      content: ' - ';
+      display: block;
+    }
   }
 }
 

@@ -336,6 +336,44 @@
       margin-left: 15px;
     }
   }
+
+  .page-home {
+    // display: flex;
+
+    body {
+      align-self: center;
+      // min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-wrapper {
+      flex-grow: 1;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 100%;
+    }
+    .home {
+      align-self: center;
+      // width: 40%;
+    }
+    .tickets-button {
+      padding-left: 1rem;
+      margin-left: 1.4rem;
+      padding-right: 1.05rem;
+      margin-top: 0;
+      display: inline-block;
+    }
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .conf-time,
+    .conf-location,
+    .conf-location:before {
+      display: inline;
+    }
+  }
 }
 
 @media all and (min-width: 768px) and (min-height: 40em) {
