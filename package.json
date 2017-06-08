@@ -8,7 +8,7 @@
     "env": "env"
   },
   "engines": {
-    "node": "5"
+    "node": "7"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,10 @@
   "license": "MIT",
   "homepage": "https://2017.ffconf.org",
   "dependencies": {
-    "express": "^4.13.4",
-    "harp": "^0.20.3",
+    "express": "^4.15.3",
+    "harp": "^0.24.0",
     "harp-static": "^0.1.0",
-    "jstransformer-marked": "^1.0.1",
-    "moment": "^2.13.0"
+    "jstransformer-marked": "^1.0.2",
+    "moment": "^2.18.1"
   }
 }
