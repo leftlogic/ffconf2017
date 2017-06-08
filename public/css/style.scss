@@ -3,6 +3,11 @@
 @import "var";
 @import "mixin";
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 *, *:after, *:before {
   @include box-sizing(border-box);
 }
@@ -495,6 +500,10 @@ svg {
       content: ' - ';
       display: block;
     }
+  }
+
+  .home-images {
+    flex-grow: 1;
   }
 }
 
