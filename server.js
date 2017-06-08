@@ -27,19 +27,13 @@ app.use((req, res, next) => {
 global.moment = moment;
 
 if (process.env.NODE_ENV !== 'production') {
-  // Yeah...don't ask.
-  // var config = require('./harp.json');
-  // Object.keys(config.globals).forEach(function (key) {
-  //   global[key] = config.globals[key];
-  // });
-  // </rando>
   app.use(express.static(__dirname + '/public'));
   app.use(harp.mount(__dirname + '/public'));
 
   if (module.parent) {
     module.exports = app;
   } else {
-    var server = app.listen(port, function(){
+    var server = app.listen(port, () => {
       console.log('Listening at http://%s:%s', server.address().address, server.address().port);
     });
   }

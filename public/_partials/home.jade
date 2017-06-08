@@ -1,0 +1,12 @@
+section.home.main(role='region', aria-labelledby='Home')
+  h1(aria-label="f f conf")
+    <svg class="logo"><use xlink:href="#logo-extended"></use></svg>
+  h2
+    span Twice:
+    time(timestamp="20171110T10:00:00")=moment(dates[0]).format('MMM D') + ' & ' + moment(dates[1]).format('D')
+    span &nbsp;- Brighton, UK
+
+  a.button(href="/sessions") Event info
+  a.button.tickets-button(href=ticketUrl, target='_blank')
+    <svg><use xlink:href="#icon-arrow-right"></use></svg>
+    ="Get Tickets"

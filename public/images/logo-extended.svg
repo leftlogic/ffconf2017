@@ -1,4 +1,4 @@
-<svg viewBox="0 0 489 95" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<symbol id="logo-extended"  viewBox="0 0 489 95" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <filter id="logo-extended-shadow" x="-1.9%" y="-11.5%" width="103.9%" height="127.1%" filterUnits="objectBoundingBox">
       <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
@@ -17,4 +17,4 @@
     <use xlink:href="#logo-extended-path" fill="#F00" transform="translate(6.4 5.2)"/>
     <use xlink:href="#logo-extended-path" fill="#FEFF00"/>
   </g>
-</svg>
+</symbol>

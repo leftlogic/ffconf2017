@@ -1,4 +1,32 @@
 @import "var";
+
+/* Colors
+   ========================================================================== */
+.page-home {
+  background: $c-blue;
+  color: $c-grey-light;
+
+  .wrapper {
+    background: $c-grey;
+  }
+
+  .button {
+    box-shadow: inset 0 0 0px 2px #FFEB3B;
+    color: $c-yellow;
+  }
+
+  .tickets-button {
+    box-shadow: none;
+    background: $c-cyan;
+    color: $c-blue;
+
+    &:hover, &:focus, &:active {
+      background: $c-white;
+      color: $c-purple;
+    }
+  }
+}
+
 /* Colors
    ========================================================================== */
 .page-sessions {

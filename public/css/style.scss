@@ -450,5 +450,54 @@ svg {
   }
 }
 
+/* Homepage
+   ========================================================================== */
+.page-home {
+  background: url(/images/home-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+
+  body {
+    align-self: center;
+    min-height: 720px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-wrapper {
+    margin-top: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+  }
+
+  h1 .logo {
+    height: 100%; // IDK
+    width: 100%;
+    max-height: none;
+    padding: 0;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .home {
+    align-self: center;
+    width: 40%;
+  }
+
+  .tickets-button {
+    padding: 0 1.05em 0 1rem;
+    margin-left: 1.4rem;
+    display: inline-block;
+  }
+}
 
 @import "mq";

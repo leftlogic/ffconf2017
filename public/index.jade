@@ -1,13 +1,11 @@
 block vars
-  - var klass = 'page-cfp'
-  - var ikons = []
+  - var klass = 'page-home'
+  - var ikons = ['logo-extended']
   - var page = 'home'
+  - var stripped = true;
 
 extends _partials/layout.jade
 
 block content
-  include _partials/quote
-
   div.main-wrapper
-    include _partials/cfp
-  +quote()
+    include _partials/home

@@ -4,11 +4,14 @@ block vars
 
 include ../images/logo.svg
 
+if (ikons.includes('logo-extended'))
+  include ../images/logo-extended.svg
+
 if ikons.indexOf('apply') !== -1
   include ../images/icons/apply.svg
 
 if ikons.indexOf('arrow-left') !== -1
-include ../images/icons/arrow-left.svg
+  include ../images/icons/arrow-left.svg
 
 include ../images/icons/arrow-right.svg
 
@@ -62,7 +65,6 @@ if ikons.indexOf('thumb-up') !== -1
 
 </defs>
 </svg>
-
 
 mixin icon(className, iconName)
   svg(aria-hidden='true' class=className)
