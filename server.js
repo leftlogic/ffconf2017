@@ -59,7 +59,7 @@ if (process.env.NODE_ENV !== 'production') {
     // server(outputPath, port);
     if (!module.parent) {
       console.log('Running harp-static on ' + port);
-      var server = app.listen(port, function(){
+      const server = app.listen(port, () => {
         console.log('Listening at http://%s:%s', server.address().address, server.address().port);
       });
     }

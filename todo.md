@@ -1,4 +1,8 @@
-
-* create twitter card image
-* ask name of designer for humans.txt
-* update twitter description in layout.jade
+- [ ] create twitter card image
+- [ ] ask name of designer for humans.txt
+- [ ] create twitter logo
+- [ ] update twitter description in layout.jade
+- [ ] need julie’s email
+- [ ] need remy’s email
+- [ ] in scholarship need links to sassconf, otsconf, the original post
+- [ ] rename the worshop pages with the real title slug
