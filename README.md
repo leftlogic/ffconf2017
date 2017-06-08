@@ -10,9 +10,20 @@ ffconf 2016
 
 ### Disable minified code while developing the website
 
-* In `node_modules/terraform/lib/stylesheet/processors/scss.js` change `outputStyle: 'compressed'` to `outputStyle: 'expanded'`.
+* In `node_modules/terraform/lib/stylesheet/processors/scss.js` change the `scss.render` options object to
 
-* In `node_modules/terraform/lib/stylesheet/index.js` change `callback(null, minify.css(result.css))` to `callback(null, result.css)`.
+  ```
+  file: filePath,
+  includePaths: dirs,
+  outputStyle: 'expanded',
+  sourceMap: true,
+  sourceMapEmbed: true,
+  sourceMapContents: true,
+  outFile: filePath,
+  omitSourceMapUrl: false
+  ```
+
+* In `node_modules/terraform/lib/stylesheet/index.js` change `callback(null, minify.css(result.css), result.map)` to `callback(null, result.css, result.map)`.
 
 * In  `node_modules/terraform/lib/template/processors/jade.js` add `options.pretty = true` before `return jade.compile(fileContents, options)`.
 
