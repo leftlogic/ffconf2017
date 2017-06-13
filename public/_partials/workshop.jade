@@ -9,7 +9,7 @@ style
   = '}'
   = '}'
 
-section.workshop-wrapper.workshop-full.sub-hr(id=workshop.slug)
+section.workshop-wrapper.workshop-full(id=workshop.slug)
   header.workshop-header
     div.workshop-header-content
       h3.workshop-title(role='heading', aria-level='3')= workshop.title
@@ -44,3 +44,8 @@ section.workshop-wrapper.workshop-full.sub-hr(id=workshop.slug)
       h2 Detailed description
       !=global.marked(workshop.description)
       !=global.marked(workshop.extendedDescription)
+
+  div.workshop-nav
+    a.button.back-button(href='/workshops')
+      +icon('', 'arrow-left')
+      |Back to all workshops

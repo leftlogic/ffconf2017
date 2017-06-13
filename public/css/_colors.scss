@@ -32,8 +32,7 @@
   }
 }
 
-/* Colors
-   ========================================================================== */
+
 .page-sessions {
   background: $c-yellow;
   color: $c-white;
@@ -104,7 +103,8 @@
 }
 
 
-.page-workshops {
+.page-workshops,
+.page-workshop {
   background: $c-blue;
   color: $c-blue;
 
@@ -187,6 +187,34 @@
   }
   .workshop-speaker-name {
     color: $c-white;
+  }
+}
+
+
+.page-workshop {
+  background: $c-blue;
+  color: $c-magenta;
+
+  .wrapper {
+    background: $c-yellow;
+  }
+  .workshop-content-wrapper {
+    h2 {
+      color: $c-blue;
+    }
+  }
+  .quote {
+    &-image {
+      border-color: $c-cyan;
+    }
+  }
+  .back-button {
+    border-color: $c-blue;
+    color: $c-blue;
+
+    &:hover, &:focus, &:active {
+      border-color: $c-purple;
+    }
   }
 }
 

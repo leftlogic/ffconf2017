@@ -2,7 +2,7 @@
 - [ ] ask name of designer for humans.txt
 - [ ] create twitter logo
 - [ ] update twitter description in layout.jade
-- [ ] need julie’s email
-- [ ] need remy’s email
-- [ ] in scholarship need links to sassconf, otsconf, the original post
+- [ ] need julie’s email for scholarship.jade
+- [ ] need remy’s email for scholarship.jade
+- [ ] in scholarship.jade need links to sassconf, to otsconf, to the original post
 - [ ] rename the worshop pages with the real title slug

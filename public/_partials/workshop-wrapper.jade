@@ -1,0 +1,13 @@
+block vars
+  - var klass = 'page-workshop'
+  - var ikons = ['arrow-left']
+  - var page = 'workshops'
+
+extends layout.jade
+
+block content
+  include quote
+
+  div.main-wrapper
+    include workshop
+  +quote()

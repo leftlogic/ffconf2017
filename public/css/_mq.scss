@@ -36,7 +36,7 @@
     display: flex;
   }
   .break {
-    align-items: center;
+    align-items: baseline;
   }
   .session-links {
     margin: 0;
@@ -50,6 +50,8 @@
   }
   .schedule-title,
   .session-title {
+    align-items: baseline;
+    margin-bottom: 0;
     min-width: 0;
     word-wrap: break-word;
   }

@@ -50,7 +50,13 @@ svg {
   margin: 5% auto;
   max-width: 1024px;
   padding: 0;
-  width: 90%;
+  width: 95%;
+}
+.masthead,
+.main,
+.quote-wrapper {
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 
@@ -124,23 +130,25 @@ svg {
 }
 .section-title-logo {
   height: 2em;
+  margin-right: 0.5em;
   width: 2em;
-}
-.masthead,
-.main,
-.quote-wrapper {
-  margin-left: 2em;
-  margin-right: 2em;
 }
 
 
 /* Non Speaker Session
    ========================================================================== */
-.schedule-logo {
-  height: 2em;
-  margin-right: 1em;
-  vertical-align: middle;
-  width: 2em;
+.schedule {
+  &-logo {
+    height: 2em;
+    margin-right: 1em;
+    vertical-align: middle;
+    width: 2em;
+  }
+  &-title {
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: .5em;
+  }
 }
 
 
@@ -164,6 +172,9 @@ svg {
 }
 .session-header-line {
   margin-bottom: 1em;
+}
+.session-title {
+  // margin-bottom: .5em;
 }
 .sessions-titles {
   .session-about-wrapper {
@@ -223,6 +234,13 @@ svg {
     margin-top: 0;
     padding-top: 25px;
   }
+}
+.workshop-nav {
+  text-align: center;
+}
+.workshop-wrapper .back-button {
+  border: 2px solid;
+  margin: 1em auto;
 }
 
 
@@ -465,7 +483,7 @@ svg {
 
   body {
     margin: 5vh auto;
-    min-height: 90vh;
+    min-height: 90%;
     padding: 1em 0;
     text-align: center;
   }
