@@ -163,8 +163,17 @@
     color: $c-white;
   }
 
+  .workshop-summary {
+    .workshop-header {
+      background: $c-magenta;
+    }
+  }
+  .workshop-full {
+    .workshop-header-content {
+      background: $c-magenta;
+    }
+  }
   .workshop-header {
-    background: $c-magenta;
     color: $c-yellow;
 
     .button {

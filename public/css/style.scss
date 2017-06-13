@@ -54,6 +54,7 @@ svg {
 }
 .masthead,
 .main,
+.workshop-content-wrapper,
 .quote-wrapper {
   margin-left: .5em;
   margin-right: .5em;
@@ -222,8 +223,13 @@ svg {
   margin: 25px 0 9px;
 }
 .workshop-full .workshop-details,
-.workshop-content p {
-  padding-top: 25px;
+.workshop-content {
+  p {
+    padding-top: 25px;
+  }
+  h2 {
+    margin-top: 2em;
+  }
 }
 .workshop-full {
   margin-top: 25px;
