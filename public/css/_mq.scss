@@ -124,6 +124,19 @@
     margin-right: 2em;
   }
 
+  .section-title,
+  .diversity,
+  .cfp,
+  .scholarship,
+  .locations-wrapper,
+  .sessions-main,
+  .workshops-intro,
+  .workshop-content-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+  }
+
   .button {
     line-height: 50px;
     padding-bottom: 0;
@@ -407,6 +420,19 @@
     }
   }
 }
+
+
+@include mq-min-check(1024px) {
+  .section-title {
+    position: relative
+  }
+  .section-title-logo {
+    margin-right: 1em;
+    right: 100%;
+    position: absolute;
+  }
+}
+
 
 @media all and (min-width: 768px) and (min-height: 40em) {
 

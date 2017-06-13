@@ -1,7 +1,7 @@
 - var sessionTime = completeDate.clone()
 != partial('/js/_idify')
 
-section.main(role='region', aria-labelledby='sessions', class='sessions-' + config.mode)
+section.main.sessions-main(role='region', aria-labelledby='sessions', class='sessions-' + config.mode)
   h2#sessions.section-title(role='heading', aria-level='2')
     +icon('section-title-logo', 'bulb-large')
     | Sessions
