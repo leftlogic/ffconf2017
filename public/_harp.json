@@ -21,7 +21,7 @@
         "angular-2": false,
         "debug-and-tools": false
       },
-      "mode": "speakers",
+      "mode": "titles",
       "comments": {
         "mode-options": "titles|speakers|schedule",
         "phase-options": {

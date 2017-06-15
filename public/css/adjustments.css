@@ -1,0 +1,103 @@
+.footer > * {
+  max-width: 720px;
+}
+
+.sub-hr {
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+p.intro {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(14, 255, 255, 0.5);
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page-sessions .section-title {
+  font-size: 2.5rem;
+}
+
+.section-title-logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.sessions-titles .session-about-wrapper {
+  padding-left: 0;
+}
+
+.sessions-titles .session-title {
+  padding-left: 0rem;
+}
+
+.sessions-titles .session-title:before {
+  position: relative;
+  margin-right: 1rem;
+  font-size: inherit
+}
+
+@media all and (min-width: 1024px) { /* FIXME check this value is right */
+  .tickets-button {
+    padding-right: 1rem;
+  }
+
+  .logo-link {
+    width: 75px;
+  }
+
+  .logo {
+    display: block;
+    height: 100%;
+    max-height: fit-content;
+  }
+
+  p.intro {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .nav-list li {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .nav-list li:last-child {
+    padding-right: 3rem;
+  }
+
+  .section-title-logo {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .sessions-wrapper li:first-child {
+    padding-top: 0;
+  }
+
+  .sessions-titles .session-about-wrapper {
+    padding-left: 0;
+  }
+
+  .sessions-titles .session-title {
+    padding-left: 0rem;
+  }
+
+
+  .sessions-titles .session-title:before {
+    position: absolute;
+    left: -5rem;
+    font-size: 28px;
+  }
+}
