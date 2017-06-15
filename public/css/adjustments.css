@@ -1,3 +1,14 @@
+.page-home .home-images {
+  padding: 1rem 2rem;
+  padding-left: 0;
+  align-self: center;
+}
+
+.page-home .home-images picture img {
+  max-width: 100%;
+  max-height: 720px;
+}
+
 .footer > * {
   max-width: 720px;
 }
@@ -48,17 +59,60 @@ p.intro {
   font-size: inherit
 }
 
+.tickets-button span {
+  display: none;
+}
+
+.page-home {
+  text-align: center;
+}
+
+.page-home .conf-location:before {
+  display: none;
+}
+
 /* note: in dev, there's white space between the elements
    so this isn't required, but in production, they butt
    together, so I'm visually padding apart. */
 .previous-years__list li {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-@media all and (min-width: 1024px) { /* FIXME check this value is right */
+@media all and (max-width: 768px) { /* sorry… - rem */
+  .page-home .tickets-button {
+    display: inline-block;
+    padding: .75em 1.5em;
+    margin-left: 1.4rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .page-home .conf-location:before {
+    display: inline;
+  }
+
+  .page-home h1 .logo {
+    max-height: 40vh;
+    width: 35vw;
+  }
+
+  .page-home body {
+    text-align: left;
+  }
+
+}
+
+@media all and (min-width: 1024px) { /* RADAR check this value is right */
   .tickets-button {
     padding-right: 1rem;
   }
+
+  .tickets-button span {
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-right: 1ch;
+  }
+
 
   .logo-link {
     width: 75px;
@@ -106,5 +160,7 @@ p.intro {
     position: absolute;
     left: -5rem;
     font-size: 28px;
+  }
+}
   }
 }
