@@ -48,6 +48,13 @@ p.intro {
   font-size: inherit
 }
 
+/* note: in dev, there's white space between the elements
+   so this isn't required, but in production, they butt
+   together, so I'm visually padding apart. */
+.previous-years__list li {
+  margin-right: 0.5rem;
+}
+
 @media all and (min-width: 1024px) { /* FIXME check this value is right */
   .tickets-button {
     padding-right: 1rem;
