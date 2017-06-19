@@ -1,12 +1,7 @@
 .page-home .home-images {
   padding: 1rem 2rem;
-  padding-left: 0;
+  /* padding-left: 0; */
   align-self: center;
-}
-
-.page-home .home-images picture img {
-  max-width: 100%;
-  max-height: 720px;
 }
 
 .footer > * {
@@ -77,6 +72,55 @@ p.intro {
 .previous-years__list li {
   margin-left: 0.5rem;
 }
+
+/* CSS grid magic for homepage */
+
+.home-images {
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 100px 100px 100px;
+  position: relative;
+}
+
+.home-images img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.g img {
+  display: block;
+}
+
+.g.anna {
+  justify-self: end;
+  align-self: end;
+  grid-row: auto / span 2;
+  max-height: 60%;
+}
+
+.g.friends {
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+  align-self: end;
+  justify-self: start;
+}
+
+.g.ice {
+  grid-row: auto / span 2;
+}
+
+.g.family {
+  grid-row: auto / span 2;
+}
+
+.c, .d {
+  grid-row: auto / span 2;
+}
+
+
+
 
 @media all and (max-width: 768px) { /* sorry… - rem */
   .page-home .tickets-button {
@@ -160,7 +204,3 @@ p.intro {
     position: absolute;
     left: -5rem;
     font-size: 28px;
-  }
-}
-  }
-}
