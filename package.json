@@ -4,7 +4,7 @@
   "description": "ffconf2017",
   "main": "server.js",
   "scripts": {
-    "start": "PORT=9009 node server.js",
+    "start": "node server.js",
     "env": "env"
   },
   "engines": {
