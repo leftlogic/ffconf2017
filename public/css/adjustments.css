@@ -45,7 +45,6 @@ hr.divide {
 .page-home .home-images {
   padding: 2rem;
   align-items: center;
-  height: 80vh;
   align-self: center;
   justify-self: center;
 }
@@ -135,12 +134,11 @@ h2 .section-title-logo {
 
   position: relative;
   align-content: end;
-  grid-template-rows: 75px 75px 50px;
+  grid-gap: 5px;
+  grid-template-rows: 25vh 10vh;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
   grid-template-areas:
     "a b b"
-    "c d e"
     "c d f";
 
 }
@@ -190,7 +188,8 @@ h2 .section-title-logo {
 
 .g.sara {
   grid-area: e;
-  display: none;
+  display: none; /* shown at a larger rez, sorry Sara <3 */
+  align-self: start;
 }
 
 .g.marcy {
@@ -209,16 +208,20 @@ h2 .section-title-logo {
 
 }
 
-@media all and (min-width: 640px) {
+@media all and (min-width: 425px) {
   .home-images {
-    grid-template-rows: 500px 100px 100px;
-    grid-template-rows: 40vh 20vh 20vh;
+    grid-template-rows: 20vh 20vh;
+    grid-template-areas:
+      "c f f"
+      "d f f";
   }
 
-  .g.sara {
-    display: block;
-    align-self: start;
+  .g.sara,
+  .g.anna,
+  .g.friends {
+    display: none;
   }
+
 }
 
 
@@ -229,6 +232,24 @@ h2 .section-title-logo {
 }
 
 @media all and (min-width: 768px) {
+
+  .home-images {
+    grid-template-rows: 50vh 10vh 10vh;
+    grid-template-areas:
+      "a b b"
+      "c d e"
+      "c d f";
+  }
+  .g.sara,
+  .g.anna,
+  .g.friends {
+    display: block;
+  }
+
+  .g.sara {
+    display: block;
+  }
+
   .page-home .conf-location:before {
     display: inline;
   }
@@ -316,4 +337,6 @@ h2 .section-title-logo {
   .sessions-titles .session-title:before {
     position: absolute;
     left: -5rem;
-    font-size: 28p
+    font-size: 28px
+  }
+}
