@@ -1,6 +1,6 @@
 .DS_Store
 *.log
-public/fonts/
+# public/fonts/
 www/
 node_modules/
 public/css/style.css
