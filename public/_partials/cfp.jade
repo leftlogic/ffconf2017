@@ -1,39 +1,49 @@
+- var date1 = moment(dates[0]);
+- var date2 = moment(dates[1]);
+- var when = date1.format('Do') + ' & ' + date2.format('Do MMMM YYYY')
+
 section.cfp.main(role='region', aria-labelledby='call-for-papers')
   h2#cfp.section-title(role='heading', aria-level='2')
-    +icon('section-title-logo', 'heart-large')
+    +icon('section-title-logo', 'help')
     | ffconf 2017 cfp
-  :marked
-    ffconf 2017 is running on two dates: 10th and 11th November (that's right: twice) and this post includes the details for the Call For Proposals (CFP). The conference itself takes place at the Duke of Yorks in Brighton, UK.
 
+  p
+    ffconf 2017 is running on two dates: #{when} (that's right: twice) and this post includes the details for the Call For Proposals (CFP). The conference itself takes place at the Duke of Yorks in Brighton, UK.
+
+  :marked
     This post includes both what I want to hear about (to give you an idea whether something you're passionate about aligns with the topics), and also mine and Julie's promise to our speakers.
 
-    You can also follow the @ffconf twitter account for the latest announcements to find out how to join in on this fun!
+    You can also follow the [@ffconf](https://twitter.com/ffconf) twitter account for the latest announcements to find out how to join in on this fun!
 
+  a.button.cta(href="https://ffconf.org/cfp-apply" target="_blank") Apply now
+
+  :marked
     ### Topics I'm interested in hearing about
 
-    Here are the topics I've been thinking about since the last ffconf. Note that there's also other topics that I've left off the list where I already have a speaker 😍
+    Here are the topics that I often think about around ffconf. Note that there's also other topics that I've left off the list where I already have a speaker 😍
 
-  h3.cfp-title(role='heading', aria-level='3')
+  h3.with-icon.cfp-title(role='heading', aria-level='3')
     +icon('section-title-logo', 'code')
     | Code, development
 
   :marked
     - Testing, in particular integration tests and selenium/full end to end cross browser testing
     - Accessibility first hand, what is the impact of our work?
-    - Forget ES2015: what about ES2017 and ES2017?
+    - Forget ES2015: what about ES2049 aka ES Blade Runner?
     - Tick box guide to security and/or performance
-    - Data science tooling on the CLI
+    - How our development practices are changing
+    - Data science with the web
 
-  h3.cfp-title(role='heading', aria-level='3')
+  h3.with-icon.cfp-title(role='heading', aria-level='3')
     +icon('section-title-logo', 'bulb-small')
     | Process, ideas
 
   :marked
     - The army of one: the developer that does it all (what motivates you day-to-day, what inspires you, any war stories from the web)
     - The (social) importance of progressive web apps
-    - Value of emoji and communication (and any impact on social coding)
+    - History of the tech we take for granted
 
-  h3.cfp-title(role='heading', aria-level='3')
+  h3.with-icon.cfp-title(role='heading', aria-level='3')
     +icon('section-title-logo', 'heart-small')
     | Bettering ourselves and others
 
@@ -44,18 +54,22 @@ section.cfp.main(role='region', aria-labelledby='call-for-papers')
     - Teaching the next generation of developers (in, or straight of school)
     - The sharp end of open source
 
+  hr.divide
 
   :marked
-    If you're passionate about something and it's not listed - go ahead and get in touch anyway, I want to hear about it.
+    If you're passionate about something and it's not listed, or a variation of what's list - please ahead and get in touch anyway, I want to hear from you.
 
     Topics that don't work, unless they're genuinely going to change the World, then CFPs like these generally fall to the bottom of the pile (sorry):
 
-    - What's great about X library (where X is React, Ember, etcetera)
+    - What's great about some new fancy pants library or plugin
     - Your company's new shiny product
     - Talks that are similar to recent years of ffconf talks
 
-    Send us the title of your talk, an outline of the talk and any extra information you want us to know about the idea: events@leftlogic.com.
+    Send us the title of your talk, an outline of the talk and any extra information you want us to know about the idea:
 
+  a.button.cta(href="https://ffconf.org/cfp-apply" target="_blank") Apply now
+
+  :marked
     It takes me a long time to process and decide on CFPs, so whilst there's not 8 sessions up on the site, it means your talk is still up for consideration. I will respond to everyone with a yay or nay eventually. If you want to come to ffconf, regardless of whether your CFP is selected, please buy a ticket and if your talk is selected, the ticket will be refunded and returns to the public pool of tickets.
 
     ### Our promise to you
@@ -71,6 +85,8 @@ section.cfp.main(role='region', aria-labelledby='call-for-papers')
     - £1,000 honorarium (since our event is running twice, you're being paid two £500 honorariums)
     - A free pass to the next ffconf, and for evermore part of our growing and much loved speaker alumni
     If you bought a ticket for ffconf, we'll refund the ticket (as we don't expect, or want, our speakers to pay)
-    - Uphold our conference code of conduct, both for you, and our attendees (either will be, or based on [confcodeofconduct.com](http://confcodeofconduct.com))
+    - Uphold our [conference code of conduct](/code-of-conduct), both for you, and our attendees
 
     So I hope to hear from you soon!
+
+  a.button.cta(href="https://ffconf.org/cfp-apply" target="_blank") Apply now

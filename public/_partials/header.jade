@@ -1,4 +1,4 @@
-- var menu = [{ 'title': 'sessions', 'url': '/sessions' }, { 'title': 'workshops', 'url': '/workshops' }, { 'title': 'locations', 'url': '/locations' }, { 'title': 'diversity', 'url': '/diversity' }]
+- var menu = siteNav; // set in harp.json for multiline
 - var text = {}
 - text.intro1 = '1 day conference'
 - text.intro2 = 'run twice'
@@ -6,7 +6,9 @@
 - text.location1 = 'Duke of York\'s'
 - text.location2 = 'Brighton, UK'
 - text.date = 'November 10 & 11'
-
+- var date1 = moment(dates[0]);
+- var date2 = moment(dates[1]);
+- var when = date1.format('D') + ' & ' + date2.format('D-MMM')
 - var line = 'Tickets @ £160+VAT will be sold on the 15th and 22nd July at 11am BST.'
 - var button = 'On sale 13 July'
 - var buy = false
@@ -20,11 +22,11 @@ if config.phase == 1
       - buy = false
     else
       - line = 'Workshop (+conf pass) tickets available now. Next batch on sale 22nd July.'
-      - button = 'Buy Tickets'
+      - button = 'Tickets ' + when
       - buy = true
   else
     - line = 'Conference & workshop (+conf pass) tickets available to buy!'
-    - button = 'Buy Tickets'
+    - button = 'Tickets ' + when
     - buy = true
 if config.phase >= 2 && config.phase < 4
   if config.soldout.conference

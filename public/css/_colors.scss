@@ -10,16 +10,6 @@
     background: $c-grey;
   }
 
-  .button {
-    box-shadow: inset 0 0 0px 2px $c-yellow;
-    color: $c-yellow;
-
-    &:hover, &:focus, &:active {
-      background: $c-yellow;
-      color: $c-grey;
-    }
-  }
-
   .tickets-button {
     box-shadow: none;
     background: $c-cyan;

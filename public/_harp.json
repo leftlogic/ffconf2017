@@ -1,5 +1,20 @@
 {
   "globals": {
+   "siteNav": [
+      { "title": "sessions", "url": "/sessions" },
+      { "title": "scholarship", "url": "/scholarship" },
+      { "title": "call for papers", "url": "/cfp" }
+    ],
+   "allNavItems": [
+      { "title": "workshops", "url": "/workshops" },
+      { "title": "diversity", "url": "/diversity" },
+      { "title": "locations", "url": "/locations" },
+      { "title": "sessions", "url": "/sessions" },
+      { "title": "workshops", "url": "/workshops" },
+      { "title": "locations", "url": "/locations" },
+      { "title": "diversity", "url": "/diversity" },
+      { "title": "Code of Conduct", "url": "/code-of-conduct" }
+   ],
     "siteTitle": "ffconf :: JavaScript Conference :: 9th & 10th November 2017",
     "siteDescription": "ffconf 2017 is a one day JavaScript Conference at the Duke of York’s Picturehouse in Brighton, UK run on 9th and 10th November 2017",
     "shortName": "ffconf 2017",

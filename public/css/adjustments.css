@@ -1,3 +1,34 @@
+/* bespoke page changes */
+.page-cfp .cta {
+  display: block;
+  max-width: 70%;
+  margin: 0 auto 1.6rem auto;
+}
+
+/** end */
+
+
+h3 {
+  position: relative;
+}
+
+h3 .section-title-logo {
+  vertical-align: middle;
+}
+
+/* this is a bit rubbish, sorry, re-implemented Giulia's .sub-hr' */
+hr.divide {
+  padding-top: 2rem;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 0.5rem;
+}
+
+.page-sessions .quote-image-wrapper:after, .page-sessions .quote-content-wrapper {
+  padding-bottom: 2rem;
+}
+
 .page-home .home-images {
   padding: 1rem 2rem;
   /* padding-left: 0; */
@@ -31,7 +62,7 @@ p.intro {
   font-size: 2.5rem;
 }
 
-.section-title-logo {
+h2 .section-title-logo {
   height: 2rem;
   width: 2rem;
 }
@@ -185,13 +216,23 @@ p.intro {
   }
 }
 
-@media all and (min-width: 1024px) { /* RADAR check this value is right */
+@media all and (min-width: 1024px) {
+  .with-icon,
+  .with-icon + ul {
+    margin-left: 4rem;
+  }
+
+  .with-icon .section-title-logo {
+    height: 3rem;
+    width: 3rem;
+    margin-top: -0.5rem;
+  }
+
   .tickets-button span {
     display: inline-block;
     padding-right: 0.5rem;
     padding-right: 1ch;
   }
-
 
   p.intro {
     padding-bottom: 3rem;
@@ -207,7 +248,7 @@ p.intro {
     padding-right: 3rem;
   }
 
-  .section-title-logo {
+  h2 .section-title-logo {
     height: 7rem;
     width: 7rem;
   }
