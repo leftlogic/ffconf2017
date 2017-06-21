@@ -55,7 +55,6 @@ function run(s, bufferList) {
       [str, delay, sound] = [s, 1000, true];
     }
 
-    console.log(str)
     if (sound) {
       const sound = audioContext.createBufferSource();
       sound.buffer = bufferList[0];
@@ -71,11 +70,12 @@ function run(s, bufferList) {
   });
 }
 
-function sequencer(s, bufferList) {
+function sequencer(s, bufferList, done) {
   s.reduce((acc, curr) => {
     return acc.then(() => run(curr, bufferList))
-  }, Promise.resolve());
+  }, Promise.resolve()).then(done);
 
+  // p.then(done)
 //   p.then(() => console.log('done')).catch(e => console.log(e))
 }
 
@@ -83,14 +83,31 @@ function main(bufferList) {
   setTimeout(function () {
     root.className += ' loading';
     const sequence = [
-      '',
+      ['', 1000, 0],
       'LOAD ',
       ['LOAD "', 500],
-      'LOAD ""',
+      ['LOAD ""', 500],
+      ['LOAD ""', 500],
+      ['LOAD ""', 3000, 0],
       // TODO show count down to event
     ];
-    sequencer(sequence, bufferList)
+    setTimeout(() => {
+      sequencer(sequence, bufferList, startAudio)
+    }, 2000)
   }, 2000);
+}
+
+function startAudio() {
+  root.className += ' countdown';
+  const target = new Date('2017-06-22 18:30:00').getTime();
+  const draw = () => {
+    requestAnimationFrame(draw);
+    const now = Date.now();
+    const t = new Date(target - now).toJSON().split('T').pop()
+    element.innerHTML = `Tickets in ${t} minutes...`;
+  }
+
+  draw();
 }
 
 const audioContext = new window.AudioContext();

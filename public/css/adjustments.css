@@ -12,6 +12,15 @@
 
 .page-tickets .tickets {
   padding: 10%;
+  font-size: 14px;
+}
+
+.page-tickets.countdown .tickets {
+  align-self: flex-start;
+}
+
+.page-tickets .wrapper {
+  max-width: 800px;
 }
 
 .chr {
