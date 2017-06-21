@@ -5,14 +5,14 @@
       { "title": "scholarship", "url": "/scholarship" },
       { "title": "call for papers", "url": "/cfp" }
     ],
-   "allNavItems": [
-      { "title": "workshops", "url": "/workshops" },
-      { "title": "diversity", "url": "/diversity" },
-      { "title": "locations", "url": "/locations" },
-      { "title": "sessions", "url": "/sessions" },
-      { "title": "workshops", "url": "/workshops" },
-      { "title": "locations", "url": "/locations" },
-      { "title": "diversity", "url": "/diversity" },
+   "allSiteNav": [
+      { "title": "Sessions", "url": "/sessions" },
+      { "title": "CFP", "url": "/cfp" },
+      { "title": "Diversity initiative", "url": "/diversity" },
+      { "title": "Scholarships", "url": "/scholarship" },
+      { "title": "Workshops", "url": "/workshops", "hide": true },
+      { "title": "Locations", "url": "/locations" },
+      { "title": "Sponsorship", "url": "https://media.ffconf.org/2017/sponsor-pack.pdf" },
       { "title": "Code of Conduct", "url": "/code-of-conduct" }
    ],
     "siteTitle": "ffconf :: JavaScript Conference :: 9th & 10th November 2017",

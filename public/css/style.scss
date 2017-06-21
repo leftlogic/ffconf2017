@@ -418,6 +418,8 @@ svg {
   padding: 2em;
 }
 .previous-years__title,
+.inline__list,
+.inline__list > li,
 .previous-years__list,
 .previous-years__item {
   display: inline-block;
@@ -521,6 +523,7 @@ svg {
   }
 
   .home {
+    flex: 1 0 43%;
   }
 
   .tickets-button {

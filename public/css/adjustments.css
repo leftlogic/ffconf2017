@@ -1,12 +1,25 @@
 /* bespoke page changes */
-.page-cfp .cta {
+.page-cfp .cta,
+.page-scholarship .cta {
   display: block;
   max-width: 70%;
   margin: 0 auto 1.6rem auto;
 }
 
+.page-home .home {
+  flex: 1 0 43%;
+}
+
 /** end */
 
+.additional-links {
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+}
+
+.additional-links a {
+  margin-right: 0.5rem;
+}
 
 h3 {
   position: relative;
@@ -30,9 +43,11 @@ hr.divide {
 }
 
 .page-home .home-images {
-  padding: 1rem 2rem;
-  /* padding-left: 0; */
+  padding: 2rem;
+  align-items: center;
+  height: 80vh;
   align-self: center;
+  justify-self: center;
 }
 
 .footer > * {
@@ -118,9 +133,16 @@ h2 .section-title-logo {
   display: grid;
   grid-gap: 5px;
 
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 75px 75px 50px;
   position: relative;
+  align-content: end;
+  grid-template-rows: 75px 75px 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "a b b"
+    "c d e"
+    "c d f";
+
 }
 
 .home-images img {
@@ -130,33 +152,41 @@ h2 .section-title-logo {
 
 .g img {
   display: block;
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .g.anna {
+  grid-area: a;
   justify-self: end;
-  align-self: end;
-  grid-row: auto / span 2;
+/*   align-self: end; */
 /*   max-height: 60%; */
 }
 
 .g.friends {
-  grid-column: auto / span 2;
-  grid-row: auto / span 2;
-  align-self: end;
+  grid-area: b;
+/*   align-self: end; */
   justify-self: start;
 }
 
 .g.ice {
-  grid-row: auto / span 2;
+  grid-area: c;
+  align-self: start;
+  justify-self: right;
 }
 
 .g.family {
-  grid-row: auto / span 2;
+  grid-area: d;
+  align-self: start;
+  justify-self: center;
 }
 
 .g.sara {
+  grid-area: e;
   display: none;
+}
+
+.g.marcy {
+  grid-area: f;
 }
 
 @media all and (min-width: 425px) {
@@ -172,7 +202,8 @@ h2 .section-title-logo {
 
 @media all and (min-width: 640px) {
   .home-images {
-    grid-template-rows: 200px 100px 100px 100px;
+    grid-template-rows: 500px 100px 100px;
+    grid-template-rows: 40vh 20vh 20vh;
   }
 
   .g.sara {
@@ -192,9 +223,14 @@ h2 .section-title-logo {
     display: inline;
   }
 
+  .page-home .home-images {
+    padding: 0;
+    padding-right: 2rem;
+  }
+
   .page-home h1 .logo {
     max-height: 40vh;
-    width: 35vw;
+    max-width: 100%;
   }
 
   .page-home body {
@@ -269,6 +305,4 @@ h2 .section-title-logo {
   .sessions-titles .session-title:before {
     position: absolute;
     left: -5rem;
-    font-size: 28px;
-  }
-}
+    font-size: 28p
