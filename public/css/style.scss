@@ -492,6 +492,27 @@ svg {
   }
 }
 
+.page-tickets {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+
+  body {
+    margin: 5vh auto;
+    min-height: 90%;
+    padding: 1em 0;
+  }
+
+  .main-wrapper {
+    margin-top: 0;
+  }
+
+  .tickets {
+    flex: 1;
+    align-self: flex-end;
+  }
+}
+
 /* Homepage
    ========================================================================== */
 .page-home {

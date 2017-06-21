@@ -10,6 +10,37 @@
   flex: 1 0 43%;
 }
 
+.page-tickets .tickets {
+  padding: 10%;
+}
+
+.chr {
+  display: inline-block;
+  background: black;
+  color: white;
+
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  0% { 
+    background: black;
+    color: white;
+  }
+  49% { 
+    background: black;
+    color: white;
+  }
+  50% { 
+    background: none;
+    color: black;
+  }
+  100% {   
+    background: none;
+    color: black;
+  }
+}
+
 /** end */
 
 .additional-links {
