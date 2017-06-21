@@ -10,9 +10,17 @@
   flex: 1 0 43%;
 }
 
+.page-tickets .wrapper {
+  box-shadow: none;
+}
+
 .page-tickets .tickets {
   padding: 10%;
   font-size: 14px;
+}
+
+.page-tickets.tone {
+  background: #0EFFFF;
 }
 
 .page-tickets.countdown .tickets {

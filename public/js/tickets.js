@@ -1,5 +1,41 @@
-var element = document.querySelector('section.main');
-var root = document.documentElement;
+const element = document.querySelector('section.main');
+const root = document.documentElement;
+
+const RATE = 60;
+const FREQ = 854; // Also speccy t-state for single bit
+
+const audioContext = new window.AudioContext();
+const gain = generateGain(); // we'll always connect to this for generated audio
+
+function generateGain() {
+  const gain = audioContext.createGain();
+  const fraction = 30 / 100; // keep the volume down to 30%
+  gain.gain.value = fraction * fraction;
+  // Connect the source to the gain node.
+  gain.connect(audioContext.destination);
+  return gain;
+}
+
+const generateSample = (sampleNumber, method = 'sin') => {
+  const sampleTime = sampleNumber / RATE;
+  const sampleAngle = sampleTime * 2 * Math.PI * FREQ;
+  return Math[method](sampleAngle);
+};
+
+function generateTone() {
+  // create Oscillator node
+  const oscillator = audioContext.createOscillator();
+
+  // value in Hz, we'll change this
+  oscillator.frequency.value = FREQ;
+
+  // now connect it to the audio output
+  oscillator.connect(gain);
+
+  // now we hear the sound
+  oscillator.start();
+  return oscillator;
+}
 
 function BufferLoader(context, urlList, callback) {
   this.context = context;
@@ -11,7 +47,7 @@ function BufferLoader(context, urlList, callback) {
 
 BufferLoader.prototype.loadBuffer = function(url, index) {
   // Load buffer asynchronously
-  var request = new XMLHttpRequest();
+  const request = new XMLHttpRequest();
   request.open("GET", url, true);
   request.responseType = "arraybuffer";
 
@@ -44,15 +80,15 @@ BufferLoader.prototype.loadBuffer = function(url, index) {
 }
 
 BufferLoader.prototype.load = function() {
-  for (var i = 0; i < this.urlList.length; ++i)
+  for (let i = 0; i < this.urlList.length; ++i)
   this.loadBuffer(this.urlList[i], i);
 }
 
 function run(s, bufferList) {
   return new Promise(resolve => {
-    let [str, delay = 1000, sound = true] = s;
+    let [str, delay = 1000, sound = true, chr = true] = s;
     if (!Array.isArray(s)) {
-      [str, delay, sound] = [s, 1000, true];
+      [str, delay, sound, chr] = [s, 1000, true, true];
     }
 
     if (sound) {
@@ -63,7 +99,8 @@ function run(s, bufferList) {
       sound.start(0);
     }
 
-    element.innerHTML = str + '<span class="chr">L</span>';
+    if (chr) str += '<span class="chr">L</span>';
+    element.innerHTML = str;
 
     setTimeout(resolve, delay);
 
@@ -74,9 +111,6 @@ function sequencer(s, bufferList, done) {
   s.reduce((acc, curr) => {
     return acc.then(() => run(curr, bufferList))
   }, Promise.resolve()).then(done);
-
-  // p.then(done)
-//   p.then(() => console.log('done')).catch(e => console.log(e))
 }
 
 function main(bufferList) {
@@ -88,7 +122,7 @@ function main(bufferList) {
       ['LOAD "', 500],
       ['LOAD ""', 500],
       ['LOAD ""', 500],
-      ['LOAD ""', 3000, 0],
+      ['', 2000, 0, 0],
       // TODO show count down to event
     ];
     setTimeout(() => {
@@ -98,19 +132,34 @@ function main(bufferList) {
 }
 
 function startAudio() {
-  root.className += ' countdown';
-  const target = new Date('2017-06-22 18:30:00').getTime();
-  const draw = () => {
-    requestAnimationFrame(draw);
-    const now = Date.now();
-    const t = new Date(target - now).toJSON().split('T').pop()
-    element.innerHTML = `Tickets in ${t} minutes...`;
-  }
+  const tone = generateTone();
 
-  draw();
+  root.className += ' countdown tone';
+  setTimeout(() => {
+    tone.disconnect();
+    root.classList.remove('tone');
+    draw();
+  }, 4000);
+
+  const target = new Date('2017-06-21 22:24:00').getTime();
+  const now = Date.now(); // start point
+  const draw = (timestamp) => {
+    requestAnimationFrame(draw);
+    const delta = target - Date.now();
+    if (delta <= 0) {
+      element.innerHTML = `R Tape loading error, 0:1`;
+      return;
+    }
+    // this is super filth, but meh…
+    const str = new Date(delta).toJSON().split('-').pop();
+    const [_h, m, s] = str.split(':');
+    let [d, h] = _h.split('T');
+    h = (parseInt(d, 10) * 24 - 24) + parseInt(h, 10);
+
+    element.innerHTML = `Loading, please wait...<br><br>Available in ${h}:${m}:${s}`;
+  }
 }
 
-const audioContext = new window.AudioContext();
 const bufferLoader = new BufferLoader(audioContext, ['/chr.m4a'], main);
 
 bufferLoader.load()
