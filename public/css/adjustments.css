@@ -150,6 +150,14 @@ h2 .section-title-logo {
   max-height: 100%;
 }
 
+.home-images {
+  overflow: hidden;
+}
+
+.g {
+  overflow: hidden;
+}
+
 .g img {
   display: block;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -158,13 +166,13 @@ h2 .section-title-logo {
 .g.anna {
   grid-area: a;
   justify-self: end;
-/*   align-self: end; */
-/*   max-height: 60%; */
+  align-self: end;
+  max-height: 60%;
 }
 
 .g.friends {
   grid-area: b;
-/*   align-self: end; */
+  align-self: end;
   justify-self: start;
 }
 
@@ -187,6 +195,7 @@ h2 .section-title-logo {
 
 .g.marcy {
   grid-area: f;
+  align-self: start;
 }
 
 @media all and (min-width: 425px) {
@@ -208,6 +217,7 @@ h2 .section-title-logo {
 
   .g.sara {
     display: block;
+    align-self: start;
   }
 }
 
@@ -231,6 +241,7 @@ h2 .section-title-logo {
   .page-home h1 .logo {
     max-height: 40vh;
     max-width: 100%;
+    height: unset;
   }
 
   .page-home body {
