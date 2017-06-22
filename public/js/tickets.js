@@ -144,12 +144,12 @@ function startAudio() {
   const target = new Date('2017-06-21 22:24:00').getTime();
   const now = Date.now(); // start point
   const draw = (timestamp) => {
-    requestAnimationFrame(draw);
     const delta = target - Date.now();
     if (delta <= 0) {
       element.innerHTML = `R Tape loading error, 0:1`;
       return;
     }
+    requestAnimationFrame(draw);
     // this is super filth, but meh…
     const str = new Date(delta).toJSON().split('-').pop();
     const [_h, m, s] = str.split(':');
