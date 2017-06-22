@@ -2,17 +2,20 @@
 - var date2 = moment(dates[1]);
 section.home.main(role='region', aria-labelledby='Home')
   h1(aria-label="f f conf")
-    include ../images/logo-extended.svg
+    a(href="/sessions")
+      include ../images/logo-extended.svg
   h2
-    span Twice:
-    span
-      time(datetime=date1.format('YYYY-MM-DDT09:00'))=date1.format('MMM')
-        |&nbsp;
-        =date1.format('D')
-      |&nbsp;&amp;&nbsp;
-      time(datetime=date2.format('YYYY-MM-DDT09:00'))=date2.format('D')
-
-    span.conf-location Brighton, UK
+    strong
+      span Twice:
+      span
+        time(datetime=date1.format('YYYY-MM-DDT09:00'))=date1.format('MMM')
+          |&nbsp;
+          =date1.format('D')
+        |&nbsp;&amp;&nbsp;
+        time(datetime=date2.format('YYYY-MM-DDT09:00'))=date2.format('D')
+      span.conf-location Brighton, UK
+    br
+    span Ticket release JULY 20 10:00
 
   a.button.cta(href="/sessions") Event info
   a.button.tickets-button(href=ticketUrl, target='_blank')

@@ -584,3 +584,8 @@ svg {
 }
 
 @import "mq";
+
+// during pre-tickets, the ticket class is dulled out
+.tickets-button {
+  background-color: $c-speccy-grey !important;
+}
