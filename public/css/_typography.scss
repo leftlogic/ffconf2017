@@ -42,6 +42,7 @@ strong {
 .footer-title {
   font-family: $f-title;
   text-transform: uppercase;
+  font-smoothing: none;
 }
 .section-title,
 .session-title:before,
