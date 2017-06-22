@@ -59,11 +59,11 @@ header.masthead(role='banner', class='phase-'+config.phase)
       div.tickets-wrapper
         if button != ''
           if buy
-            a.button.tickets-button(href=ticketUrl, target='_blank')
+            a.button.tickets-button(href=ticketUrl)
               +icon('', 'arrow-right')
               =button
           else if buttonLink
-            a.button.tickets-button(href=buttonLink, target='_blank')!= button
+            a.button.tickets-button(href=buttonLink)!= button
           else
             span.button.tickets-button!= button
       if config.phase >= 0.5
