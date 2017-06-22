@@ -5,23 +5,23 @@
 - text.tag = '#ffconf'
 - text.location1 = 'Duke of York\'s'
 - text.location2 = 'Brighton, UK'
-- text.date = 'November 10 & 11'
+- text.date = 'November 9 & 10'
 - var date1 = moment(dates[0]);
 - var date2 = moment(dates[1]);
 - var when = date1.format('D') + ' & ' + date2.format('D-MMM')
-- var line = 'Tickets @ £160+VAT will be sold on the 15th and 22nd July at 11am BST.'
-- var button = 'On sale 13 July'
+- var line = 'Tickets @ £179+VAT will be sold on the 20th July at 10am BST.'
+- var button = 'On sale 20 July'
 - var buy = false
 - var buttonLink = false
 
 if config.phase == 1
   if config.soldout.conference
     if config.soldout.workshops
-      - line = 'Tickets for this phase sold out. More go on sale 22nd July.'
+      - line = 'Tickets are sold out.'
       - button = 'Sold Out'
       - buy = false
     else
-      - line = 'Workshop (+conf pass) tickets available now. Next batch on sale 22nd July.'
+      - line = 'Workshop (+conf pass) tickets available now.'
       - button = 'Tickets ' + when
       - buy = true
   else
