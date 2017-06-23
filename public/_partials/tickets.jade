@@ -19,5 +19,10 @@ block head
 - var date1 = moment(dates[0]);
 - var date2 = moment(dates[1]);
 section.tickets.main(role='region', aria-labelledby='Tickets') &copy; 1982 Sinclair Research Ltd
-
+script.
+  window.onerror = function () {
+    window.onerror = null;
+    var ticketDate = '20 July 10:00am UK time';
+    alert('My ES6 blew up your browser…which is a little bit sucky, BUT, all is not lost!\n\n🎫 available ' + ticketDate + ' ⏰');
+  };
 script(src="/js/tickets.js")

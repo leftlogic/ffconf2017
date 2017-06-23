@@ -6,6 +6,15 @@
   margin: 0 auto 1.6rem auto;
 }
 
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
 .page-home .home {
   flex: 1 0 90%;
 }
