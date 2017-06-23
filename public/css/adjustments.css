@@ -7,7 +7,7 @@
 }
 
 .page-home .home {
-  flex: 1 0 43%;
+  flex: 1 0 90%;
 }
 
 .page-tickets .wrapper {
@@ -39,20 +39,20 @@
   animation: blinker 1s linear infinite;
 }
 
-@keyframes blinker {  
-  0% { 
+@keyframes blinker {
+  0% {
     background: black;
     color: white;
   }
-  49% { 
+  49% {
     background: black;
     color: white;
   }
-  50% { 
+  50% {
     background: none;
     color: black;
   }
-  100% {   
+  100% {
     background: none;
     color: black;
   }
@@ -92,9 +92,9 @@ hr.divide {
 
 .page-home .home-images {
   padding: 2rem;
-  align-items: center;
-  align-self: center;
-  justify-self: center;
+  /*! align-items: center; */
+  /*! align-self: center; */
+  /*! justify-self: center; */
 }
 
 .footer > * {
@@ -168,81 +168,100 @@ h2 .section-title-logo {
 }
 
 /* note: in dev, there's white space between the elements
-   so this isn't required, but in production, they butt
+   so this isn't requi
+, but in production, they butt
    together, so I'm visually padding apart. */
 .previous-years__list li {
   margin-left: 0.5rem;
 }
 
-/* CSS grid magic for homepage */
+/* CSS grid for homepage */
+
+/* alternative no-grid version since IE support isn't there
+   and the polyfill doesn't quite cut it (at 200K to boot). */
 
 .home-images {
-  display: grid;
-  grid-gap: 5px;
-
-  position: relative;
-  align-content: end;
-  grid-gap: 5px;
-  grid-template-rows: 25vh 10vh;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "a b b"
-    "c d f";
-
+  display: none;
 }
 
-.home-images img {
-  max-width: 100%;
-  max-height: 100%;
+.home-images .g {
+  display: none;
 }
 
-.home-images {
-  overflow: hidden;
-}
+@supports (display: grid) {
+  .home-images {
+    display: grid !important;
+    background: none !important;
 
-.g {
-  overflow: hidden;
-}
+    position: relative;
+    align-content: end;
+    grid-gap: 5px;
+      grid-template-rows: 10vh 10vh 10vh;
+      grid-template-columns: 1fr 1fr .75fr 1.5fr;
+      grid-template-areas:
+       "c g g f"
+       "d d b b"
+       "a a b b";
 
-.g img {
-  display: block;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+  }
 
-.g.anna {
-  grid-area: a;
-  justify-self: end;
-  align-self: end;
-  max-height: 60%;
-}
+  .home-images .g {
+    display: block;
+  }
 
-.g.friends {
-  grid-area: b;
-  align-self: end;
-  justify-self: start;
-}
+  .home-images img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-.g.ice {
-  grid-area: c;
-  align-self: start;
-  justify-self: right;
-}
+  .home-images {
+    overflow: hidden;
+  }
 
-.g.family {
-  grid-area: d;
-  align-self: start;
-  justify-self: center;
-}
+  .__g {
+    outline: 1px dashed red;
+    overflow: hidden;
+    display: block;
+  }
 
-.g.sara {
-  grid-area: e;
-  display: none; /* shown at a larger rez, sorry Sara <3 */
-  align-self: start;
-}
+  .g.anna {
+    grid-area: a;
+    /*! justify-self: end; */
+    align-self: end;
+    max-height: 60%;
+  }
 
-.g.marcy {
-  grid-area: f;
-  align-self: start;
+  .g.friends {
+    grid-area: b;
+    align-self: end;
+    /*! justify-self: start; */
+  }
+
+  .g.ice {
+    grid-area: c;
+    align-self: start;
+    justify-self: right;
+  }
+
+  .g.family {
+    grid-area: d;
+    align-self: start;
+    justify-self: center;
+  }
+
+  .g.sara {
+    grid-area: e;
+    display: none; /* shown at a larger rez, sorry Sara <3 */
+  }
+
+  .g.marcy {
+    grid-area: f;
+    align-self: right;
+  }
+  
+  .g.watching {
+    grid-area: g;
+  }
 }
 
 @media all and (min-width: 425px) {
@@ -257,17 +276,25 @@ h2 .section-title-logo {
 }
 
 @media all and (min-width: 425px) {
-  .home-images {
-    grid-template-rows: 20vh 20vh;
-    grid-template-areas:
-      "c f f"
-      "d f f";
-  }
+  @supports (display: grid) {
+    .home-images {
+      grid-template-rows: 10vh 10vh 20vh;
+      grid-template-columns: 1fr 1fr .75fr 1.5fr;
+      grid-template-areas:
+       "c g g f"
+       "d d e 0"
+       "a a b b";
+    }
+    
+    .g.ice,
+    .g.sara {
+      align-self: initial !important;
+    }
 
-  .g.sara,
-  .g.anna,
-  .g.friends {
-    display: none;
+    .g.sara {
+      display: block;
+    }
+    
   }
 
 }
@@ -280,22 +307,35 @@ h2 .section-title-logo {
 }
 
 @media all and (min-width: 768px) {
+  .page-home .home {
+    flex: 1 0 43%;
+  }
 
   .home-images {
-    grid-template-rows: 50vh 10vh 10vh;
-    grid-template-areas:
-      "a b b"
-      "c d e"
-      "c d f";
-  }
-  .g.sara,
-  .g.anna,
-  .g.friends {
+    width: 60%;
+    margin-right: 20px;
+    position: relative;
+    background: url(/images/hero/no-grid.png) no-repeat;
+    background-position: left center;
+    background-size: contain;
+    height: 80vh;
+    top: 0;
     display: block;
   }
 
-  .g.sara {
-    display: block;
+  @supports (display: grid) {
+    .home-images {
+      grid-template-rows: 50vh 10vh 10vh;
+      grid-template-areas:
+        "a b b b"
+        "c d e g"
+        "c d f g";
+    }
+    .g.sara,
+    .g.anna,
+    .g.friends {
+      display: block;
+    }
   }
 
   .page-home .conf-location:before {
@@ -385,6 +425,9 @@ h2 .section-title-logo {
   .sessions-titles .session-title:before {
     position: absolute;
     left: -5rem;
-    font-size: 28px
+    font-size: 24px;
   }
 }
+
+
+/* padding to stop Canary from eating my code

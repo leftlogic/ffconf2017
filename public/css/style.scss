@@ -543,10 +543,16 @@ svg {
     min-height: 90%;
     padding: 1em 0;
     text-align: center;
+    display: flex;
   }
 
   .main-wrapper {
     margin-top: 0;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
   }
 
   h1 .logo {
