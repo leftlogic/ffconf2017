@@ -28,6 +28,16 @@ canvas {
   font-size: 14px;
 }
 
+.page-tickets .main-wrapper {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 100%;
+}
+
 .page-tickets.tone {
   background: #00c0c0;
 }
@@ -129,7 +139,7 @@ p.intro {
   margin-bottom: 1rem;
 }
 
-.page-sessions .section-title {
+.section-title {
   font-size: 2.5rem;
 }
 
@@ -267,7 +277,7 @@ h2 .section-title-logo {
     grid-area: f;
     align-self: right;
   }
-  
+
   .g.watching {
     grid-area: g;
   }
@@ -294,7 +304,7 @@ h2 .section-title-logo {
        "d d e 0"
        "a a b b";
     }
-    
+
     .g.ice,
     .g.sara {
       align-self: initial !important;
@@ -303,7 +313,7 @@ h2 .section-title-logo {
     .g.sara {
       display: block;
     }
-    
+
   }
 
 }

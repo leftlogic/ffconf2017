@@ -497,23 +497,6 @@ svg {
   background-position: center;
   height: 100%;
 
-  // .wrapper {
-  //   position: relative;
-  //   &:before {
-  //     display: block;
-  //     content: "";
-  //     width: 100%;
-  //     padding-top: (3 / 4) * 100%;
-  //   }
-  //   > .main-wrapper {
-  //     position: absolute;
-  //     top: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     left: 0;
-  //   }
-  // }
-
   body {
     margin: 5vh auto;
     min-height: 90%;
@@ -528,6 +511,23 @@ svg {
     flex: 1;
     align-self: flex-end;
   }
+
+  body {
+    align-self: center;
+    // min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-wrapper {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+  }
+
 }
 
 /* Homepage
