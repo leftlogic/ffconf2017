@@ -7,6 +7,10 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
     | Sessions
   if config.phase < 3
     p.intro A full day of eight carefully curated sessions for an audience that cares about the future of the web, and who wants their ideas challenged.
+      br
+      small.
+        Want to know who's speaking? We don't announce our speakers right away, but you can get a sense of our speakers from <a href="https://2016.ffconf.org/#sessions" target="_blank">last year</a> ❤️
+
   //- if config.phase < 4
   //-   div.button-wrapper
   //-     if config.phase >= 1
@@ -72,14 +76,3 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
               div.session-content
                 if session.description
                   !=global.marked(session.description)
-
-    //- if totalSessions < 8
-    //-   li.session-wrapper.sub-hr.js-session(id='slugMoreToCome')
-    //-     h3.more-sessions More Sessions announced soon.
-
-  //- div.session-wrapper(id='related-blog-posts')
-  //-   h3.session-wrapper Related blog posts
-  //-   ol.posts
-  //-     each post in public._data.posts
-  //-       li
-  //-         a(href=post.url)= post.title

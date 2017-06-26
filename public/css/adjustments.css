@@ -139,6 +139,15 @@ p.intro {
   margin-bottom: 1rem;
 }
 
+.intro small {
+  /* opacity: 0.7; */
+  line-height: 28px;
+  display: block;
+  font-size: 80%;
+  margin-top: 10px;
+  color: rgb(191, 191, 191);
+}
+
 .section-title {
   font-size: 2.5rem;
 }
