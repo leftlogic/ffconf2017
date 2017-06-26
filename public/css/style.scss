@@ -589,6 +589,23 @@ svg {
   }
 }
 
+.page-plain {
+  h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  h3 {
+    margin-top: 1.8rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  h3 + p {
+    margin-left: 1rem;
+  }
+}
+
 @import "mq";
 
 // during pre-tickets, the ticket class is dulled out

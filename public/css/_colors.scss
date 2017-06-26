@@ -40,6 +40,16 @@
 
 }
 
+.page-plain {
+  background: $c-yellow;
+  color: $c-white;
+
+  .wrapper {
+    background: $c-blue;
+  }
+
+}
+
 .page-sessions {
   background: $c-yellow;
   color: $c-white;

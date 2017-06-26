@@ -14,6 +14,7 @@
       { "title": "Locations", "url": "/locations" },
       { "title": "Sponsorship", "url": "https://media.ffconf.org/2017/sponsor-pack.pdf" },
       { "title": "Code of Conduct", "url": "/code-of-conduct" }
+      { "title": "Terms", "url": "/terms" }
    ],
     "siteTitle": "ffconf :: JavaScript Conference :: 9th & 10th November 2017",
     "siteDescription": "ffconf 2017 is a one day JavaScript Conference at the Duke of York’s Picturehouse in Brighton, UK run on 9th and 10th November 2017",
