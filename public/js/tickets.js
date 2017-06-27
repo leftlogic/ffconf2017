@@ -138,7 +138,7 @@ function loadimage(img) {
   canvas.height = img.height;
   ctx.drawImage(img, 0, 0);
   canvas.toBlob(file => fileToBinary(file).then(({ binary }) => {
-    play(binary.join(''));
+    // play(binary.join('')); // FUCK IT. I give up sometimes. Now is one of those times.
   }));
 
 }
@@ -223,7 +223,7 @@ function play(data) {
 
 function generateGain() {
   const gain = audioContext.createGain();
-  const fraction = 30 / 100; // keep the volume down to 30%
+  const fraction = 20 / 100; // keep the volume down to 20%
   gain.gain.value = fraction * fraction;
   // Connect the source to the gain node.
   gain.connect(audioContext.destination);
@@ -377,9 +377,12 @@ function startAudio() {
 
     element.innerHTML = `Loading, please wait...<br><br>Ready in T-${h}:${m}:${s}`;
 
+  };
+
+  setTimeout(() => {
     analyser.getByteTimeDomainData(dataArray);
     drawLoading(dataArray);
-  };
+  }, 1000 / 3); // https://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-does-not-violate
 }
 
 const bufferLoader = new BufferLoader(audioContext, ['/chr.m4a'], main);
