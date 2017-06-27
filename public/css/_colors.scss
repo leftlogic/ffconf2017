@@ -245,7 +245,8 @@
 }
 
 
-.page-locations {
+.page-locations,
+.page-cfp {
   background: $c-grey-light;
   color: $c-white;
 
@@ -313,7 +314,8 @@
 }
 
 
-.page-diversity {
+.page-diversity,
+.page-scholarship {
   background: $c-magenta;
   color: $c-white;
 
@@ -375,7 +377,7 @@
 }
 
 
-.page-cfp {
+.__page-cfp {
   background: $c-cyan;
   color: $c-white;
 
@@ -438,7 +440,7 @@
 }
 
 
-.page-scholarship {
+.___page-scholarship {
   background: $c-blue;
   color: $c-white;
 
