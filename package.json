@@ -1,6 +1,6 @@
 {
   "name": "@remy/ffconf2017",
-  "version": "1.1.11",
+  "version": "1.1.13",
   "description": "ffconf2017",
   "main": "server.js",
   "scripts": {
