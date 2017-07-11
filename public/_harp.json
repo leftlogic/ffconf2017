@@ -35,7 +35,7 @@
         "workshops": false,
         "css-layout": false,
         "angular-2": false,
-        "debug-and-tools": false
+        "next": false
       },
       "mode": "titles",
       "comments": {

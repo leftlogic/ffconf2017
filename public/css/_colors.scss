@@ -122,34 +122,34 @@
 
 .page-workshops,
 .page-workshop {
-  background: $c-blue;
-  color: $c-blue;
+  background: $c-yellow;
+  color: $c-white;
 
   a {
     &:hover, &:focus, &:active {
-      color: $c-purple;
+      color: $c-cyan;
     }
   }
   .wrapper {
-    background: $c-cyan;
+    background: $c-blue;
   }
   .tickets-button {
-    background: $c-blue;
-    color: $c-cyan;
+    background: $c-cyan;
+    color: $c-blue;
 
     &:hover, &:focus, &:active {
-      background: $c-magenta;
-      color: $c-blue;
+      background: $c-white;
+      color: $c-purple;
     }
   }
   .nav-list a.selected {
-    border-bottom-color: $c-magenta;
+    border-bottom-color: $c-cyan;
   }
   .section-title {
-    color: $c-blue;
+    color: $c-cyan;
   }
   .sponsor {
-    box-shadow: 4px 4px 0 0 $c-blue;
+    box-shadow: 4px 4px 0 0 $c-cyan;
 
     &-title {
       color: $c-blue;
@@ -218,15 +218,15 @@
 
 
 .page-workshop {
-  background: $c-blue;
-  color: $c-magenta;
+  background: $c-yellow;
+  color: $c-white;
 
   .wrapper {
-    background: $c-yellow;
+    background: $c-blue;
   }
   .workshop-content-wrapper {
     h2 {
-      color: $c-blue;
+      color: $c-cyan;
     }
   }
   .quote {
@@ -235,11 +235,12 @@
     }
   }
   .back-button {
-    border-color: $c-blue;
-    color: $c-blue;
+    border-color: $c-yellow;
+    color: $c-yellow;
 
     &:hover, &:focus, &:active {
-      border-color: $c-purple;
+      border-color: $c-white;
+      color: $c-white;
     }
   }
 }

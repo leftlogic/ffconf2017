@@ -6,6 +6,19 @@
   margin: 0 auto 1.6rem auto;
 }
 
+.page-workshop .workshop-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.workshop-list h4 {
+  margin-top: 20px;
+}
+
+.workshop-content-wrapper {
+  padding-top: 20px;
+}
+
 canvas {
   position: absolute;
   top: 0;
@@ -78,6 +91,11 @@ canvas {
 }
 
 /** end */
+
+.workshop-header-content {
+  text-align: center;
+  padding: 20px;
+}
 
 .additional-links {
   text-transform: lowercase;
