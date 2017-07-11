@@ -1,4 +1,5 @@
 - var card = 'twitter-card-280x150.png'
+- var version = locals.public._data._version;
 block vars
 doctype
 html(id=id, class=klass, lang="en")
@@ -38,8 +39,8 @@ html(id=id, class=klass, lang="en")
     meta(name="twitter:label2" value="When? Twice!")
     meta(name="twitter:data2" value="9 & 10-Nov @ £179")
 
-    link(rel='stylesheet', href='/css/style.css')
-    link(rel='stylesheet', href='/css/adjustments.css')
+    link(rel='stylesheet', href='/css/style.css?#{ version }')
+    link(rel='stylesheet', href='/css/adjustments.css?#{ version ')
     link(rel='all-the-source', href=source)
     link(rel='author', href='/humans.txt')
     link(rel='manifest', href='/manifest.json')
@@ -145,3 +146,4 @@ html(id=id, class=klass, lang="en")
     //-   }
 
     <!--<![endif]-->
+    <!-- version: #{ version } -->

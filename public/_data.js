@@ -1,4 +1,5 @@
-{
+module.exports = {
+  "_version": require('../package.json').version,
   "locations": [
     {
       "type": "Venues",
@@ -269,53 +270,8 @@
   },
   "workshops": [
     {
-      "title": "Advanced CSS Layout Training",
-      "slug": "css-layout",
-      "ticket": {
-        "url": "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
-        "price": "445"
-      },
-
-      "details": {
-        "date": "November 9 2016",
-        "time": "09:00 — 17:00",
-        "venue": "Lighthouse, Brighton"
-      },
-
-      "speaker": {
-        "name": "Rachel Andrew",
-        "twitter": "rachelandrew",
-        "photo": "rachel.jpg"
-      },
-
-      "description": "CSS Layout has been stuck somewhere around 2006 for several years. We have had to attempt complex layout using tools such as floats and positioning. These methods never designed for complex page and application layout. However things are changing and it’s a great time to take a look at the layout methods that are now part of modern CSS, and those coming in the very near future.",
-      "extendedDescription": "This workshop is designed for designers and developers who already have a good working knowledge of HTML and CSS. We will cover a range of CSS methods for achieving layout, from those you are safe to use right now even if you need to support older version of Internet Explorer through to things that while still classed as experimental, are likely to ship in browsers in the coming months. The aim is to teach you some tips that I’ve learned working on real projects, alongside sharing some of the exciting things that I’ve been experimenting with as I look into emerging specifications.\n\nThis will be a practical workshop, we will work through code examples together, and you’ll have those worked examples to take away to experiment with further or to share with your team.",
-      "topics": [
-        {
-          "title": "Learning from the past",
-          "description": "What can we take from older layout methods that will still be helpful in the future?"
-        },
-        {
-          "title": "CSS Layout today",
-          "description": "Multiple column layout, flexbox and CSS Shapes"
-        },
-        {
-          "title": "Just Landing",
-          "description": "Find out about CSS Grid Layout, how it works with Flexbox and Box Alignment as a new layout system"
-        },
-        {
-          "title": "Experimental",
-          "description": "What else is hiding in the CSS specifications? How can we encourage browser implementations?"
-        },
-        {
-          "title": "Building the future",
-          "description": "Practical suggestions for using these techniques without locking out users of old browsers"
-        }
-      ]
-    },
-    {
-      "title": "Angular 2",
-      "slug": "angular-2",
+      "title": "Angular: Fast & Furious (v5+)",
+      "slug": "angular",
       "ticket": {
         "url": "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
         "price": "445"
@@ -335,36 +291,40 @@
 
       "topics" : [
         {
-          "title": "TypeScript",
-          "description": "ES6 and beyond."
+          "title": "New features",
+          "description": "What's new in Angular v5."
         },
         {
-          "title": "Components",
-          "description": "Basic structure and best practices."
+          "title": "Low level APIs",
+          "description": "Angular DIY. Build it from scratch."
         },
         {
-          "title": "Dependency Injection",
-          "description": "How to make it work for you."
+          "title": "RxJS next level",
+          "description": "Using High Order Observables."
         },
         {
-          "title": "Data Architecture",
-          "description": "Covering XHR, JSONP, RxJS 5, EventEmitter and Async Pipes."
+          "title": "Modern State Management",
+          "description": "Super charge your architecture using ngrx."
         },
         {
-          "title": "New Router",
-          "description": "How to setup, setting child routes and more."
+          "title": "Advanced Router",
+          "description": "Use the router in ways you didn't know were possible."
         },
         {
-          "title": "Unit Testing",
-          "description": "How to unit test all pieces."
+          "title": "Modern Server Side Rendering",
+          "description": "Learn all the intricacies of the new platform-server bundle."
         },
         {
-          "title": "Migration",
-          "description": "How to prepare Today and migrate seamlessly step-by-step."
+          "title": "Real-time GraphQL",
+          "description": "Learn everything about GraphQL Subscriptions."
+        },
+        {
+          "title": "Introducing Motion",
+          "description": "Level up your animations introducing UX Motion principles."
         }
       ],
-      "description": "Angular 2 is a revolutionary platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS.",
-      "extendedDescription": "In this workshop you will learn the major improvements in Angular 2 so you can start creating your own projects and enjoy its full benefits today!"
+      "description": "Angular is a robust platform and many products relay on its foundation. Teams have now learnt about best practices and tooling.",
+      "extendedDescription": "In this workshop you will learn about the less known areas of Angular so you can take your skills and your team to the next level!"
     },
     {
       "title": "Next.js",
