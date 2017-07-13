@@ -375,7 +375,7 @@ function startAudio() {
     let [d, h] = _h.split('T');
     h = (parseInt(d, 10) * 24 - 24) + parseInt(h, 10);
 
-    element.innerHTML = `Loading, please wait...<br><br>Ready in T-${h}:${m}:${s}`;
+    element.innerHTML = `Loading, please wait...<br><br>Tickets £179+VAT<br><br>Ready in T-${h}:${m}:${s}`;
 
   };
 

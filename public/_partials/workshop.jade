@@ -22,13 +22,13 @@ section.workshop-wrapper.workshop-full(id=workshop.slug)
 
       if config.phase < 4
         div
-          if config.phase >= 1
+          if config.phase >= 2
             if config.soldout[workshop.slug]
               span.button.workshop-button-disabled Sold Out
             else
               a.button(href=workshop.ticket.url, target='_blank') Buy tickets
           else
-            span.button On sale 13 July
+            span.button On sale 20 July
     div.workshop-header-image-wrapper
       div.workshop-header-image
   div.workshop-content-wrapper

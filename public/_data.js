@@ -274,11 +274,11 @@ module.exports = {
       "slug": "angular",
       "ticket": {
         "url": "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
-        "price": "445"
+        "price": "449"
       },
 
       "details": {
-        "date": "November 9 2016",
+        "date": "8 November 2017",
         "time": "09:00 — 17:00",
         "venue": "Lighthouse, Brighton"
       },
@@ -331,11 +331,11 @@ module.exports = {
       "slug": "next",
       "ticket": {
         "url": "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
-        "price": "445"
+        "price": "449"
       },
 
       "details": {
-        "date": "November 9 2016",
+        "date": "8 November 2017",
         "time": "09:00 — 17:00",
         "venue": "Lighthouse, Brighton"
       },
