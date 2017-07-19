@@ -143,6 +143,22 @@ module.exports = {
       },
       {
         duration: 40,
+        title: 'Rethinking the Web Platform',
+        speaker: {
+          name: '',
+          twitter: '',
+          photo: ''
+        },
+        description:
+          'Evolving the web to improve education, accessibility, performance, productivity, and design.',
+        bio: '',
+        links: [],
+        slides: '',
+        audio: '',
+        video: ''
+      },
+      {
+        duration: 40,
         title: 'Abstract art in a time of minification',
         description:
           'aesthetic is a major component of any medium for art, including the web, but one thing that has been bothering me lately is: what happened to "view source"? are we destroying aesthetic for the sake of tooling and in spite of access to our industry????¿¿¿¿',
@@ -173,22 +189,6 @@ module.exports = {
           twitter: '',
           photo: ''
         },
-        bio: '',
-        links: [],
-        slides: '',
-        audio: '',
-        video: ''
-      },
-      {
-        duration: 40,
-        title: 'Rethinking the Web Platform',
-        speaker: {
-          name: '',
-          twitter: '',
-          photo: ''
-        },
-        description:
-          'Evolving the web to improve education, accessibility, performance, productivity, and design.',
         bio: '',
         links: [],
         slides: '',

@@ -26,10 +26,10 @@
     "analytics": "UA-1656750-50",
     "id": "ffconf-2017",
     "ticketPrice": "179",
-    "ticketUrl": "/tickets",
+    "ticketUrl": "http://buytickets.at/ffconf2017",
     "source": "https://github.com/leftlogic/ffconf2017",
     "config": {
-      "phase": 1,
+      "phase": 2,
       "soldout": {
         "conference": false,
         "day1": false,
