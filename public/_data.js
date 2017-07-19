@@ -258,8 +258,9 @@ module.exports = {
       },
       {
         duration: 40,
-        title: 'Session TBA',
-        description: '…announced soon',
+        title: 'Lessons learned sciencing the web',
+        description:
+          'Discover what slows down modern apps on mobile and how to fix this.',
         speaker: {
           name: '',
           twitter: '',
@@ -366,7 +367,7 @@ module.exports = {
         'In this workshop you will learn about the less known areas of Angular so you can take your skills and your team to the next level!'
     },
     {
-      title: 'Next.js',
+      title: 'Modern Universal React dev with Next.js',
       slug: 'next',
       ticket: {
         url:
