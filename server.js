@@ -7,10 +7,11 @@ var express = require('express');
 var app = express();
 
 global.idify = s => {
-  return s.replace(/&.*?;/g, '')
-          .replace(/\s+/g, '-')
-          .replace(/[^\w\-]/g, '')
-          .toLowerCase();
+  return s
+    .replace(/&.*?;/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]/g, '')
+    .toLowerCase();
 };
 
 app.disable('x-powered-by');
@@ -34,17 +35,20 @@ if (process.env.NODE_ENV !== 'production') {
     module.exports = app;
   } else {
     var server = app.listen(port, () => {
-      console.log('Listening at http://%s:%s', server.address().address, server.address().port);
+      console.log(
+        'Listening at http://%s:%s',
+        server.address().address,
+        server.address().port
+      );
     });
   }
-
 } else {
   app.use(express.static(__dirname + '/www', { extensions: ['html'] }));
   if (module.parent) {
     module.exports = app;
   }
 
-  harp.compile(__dirname + '/public', outputPath, (errors) => {
+  harp.compile(__dirname + '/public', outputPath, errors => {
     if (errors) {
       console.log(JSON.stringify(errors, null, 2));
       process.exit(1);
@@ -54,8 +58,16 @@ if (process.env.NODE_ENV !== 'production') {
     if (!module.parent) {
       console.log('Running harp-static on ' + port);
       const server = app.listen(port, () => {
-        console.log('Listening at http://%s:%s', server.address().address, server.address().port);
+        console.log(
+          'Listening at http://%s:%s',
+          server.address().address,
+          server.address().port
+        );
       });
     }
   });
 }
+
+app.use((req, res) => {
+  res.status(404).send('404');
+});
