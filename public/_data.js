@@ -103,7 +103,7 @@ module.exports = {
         },
         {
           name: 'Samsung Internet',
-          url: 'http://developer.samsung.com/internet',
+          url: 'https://samsunginter.net',
           img: 'samsung.svg'
         }
       ]
