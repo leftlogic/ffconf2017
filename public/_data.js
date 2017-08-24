@@ -126,6 +126,11 @@ module.exports = {
           url: 'https://www.brandwatch.com/careers',
           img: 'brandwatch.png',
         },
+        {
+          name: 'Twilio',
+          url:'https://www.twilio.com/',
+          img: 'twilio.svg'
+        }
       ],
     },
   },
