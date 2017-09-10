@@ -128,9 +128,14 @@ module.exports = {
         },
         {
           name: 'Twilio',
-          url:'https://www.twilio.com/',
-          img: 'twilio.svg'
-        }
+          url: 'https://www.twilio.com/',
+          img: 'twilio.svg',
+        },
+        {
+          name: 'Fastly',
+          url: 'https://www.fastly.com/',
+          img: 'fastly.svg',
+        },
       ],
     },
   },
@@ -211,7 +216,8 @@ module.exports = {
           twitter: '',
           photo: '',
         },
-        bio: '',
+        bio:
+          'In 2001 I started making post signatures for a Final Fantasy forum, and then started coding new features for the forum itself.',
         links: [],
         slides: '',
         audio: '',
@@ -283,8 +289,9 @@ module.exports = {
       },
       {
         duration: 40,
-        title: 'Session TBA',
-        description: '…announced soon',
+        title: 'Alpha, Beta, Gamer: Dev Mode',
+        description:
+          'A live performance of video games and stand up comedy from comedian and coder, including pre prepared web games to play and even creating a video game with the audience on stage in only 10 minutes.',
         speaker: {
           name: '',
           twitter: '',
