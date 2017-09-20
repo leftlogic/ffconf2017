@@ -1,14 +1,16 @@
 @charset "UTF-8";
 
-@import "var";
-@import "mixin";
+@import 'var';
+@import 'mixin';
 
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   @include box-sizing(border-box);
 }
 body {
@@ -22,9 +24,17 @@ abbr {
 }
 
 /* Reset */
-h1, h2, h3, h4,
-p, strong, em, cite,
-ul, ol, li {
+h1,
+h2,
+h3,
+h4,
+p,
+strong,
+em,
+cite,
+ul,
+ol,
+li {
   font-size: inherit;
   font-style: normal;
   font-weight: normal;
@@ -40,13 +50,13 @@ svg {
   fill: currentColor;
 }
 
-@import "typography";
-@import "colors";
+@import 'typography';
+@import 'colors';
 
 /* Grid
    ========================================================================== */
 .wrapper {
-  box-shadow: 0 0 20px 0 rgba($c-black, .4);
+  box-shadow: 0 0 20px 0 rgba($c-black, 0.4);
   margin: 5% auto;
   max-width: 1360px;
   padding: 0;
@@ -56,10 +66,9 @@ svg {
 .main,
 .workshop-content-wrapper,
 .quote-wrapper {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
-
 
 /* Header
    ========================================================================== */
@@ -68,7 +77,6 @@ svg {
 }
 .logo {
   &-wrapper {
-
   }
   &-link {
     display: block;
@@ -84,12 +92,12 @@ svg {
 }
 .nav-list {
   li {
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     text-align: center;
   }
   a {
     display: inline-block;
-    padding: .5em 0 0;
+    padding: 0.5em 0 0;
     text-align: center;
 
     &.selected {
@@ -100,32 +108,32 @@ svg {
 }
 .button {
   display: inline-block;
-  padding: .75em 1.5em;
+  padding: 0.75em 1.5em;
   text-align: center;
 
   &.cta {
     box-shadow: inset 0 0 0px 2px $c-yellow;
     color: $c-yellow;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       background: $c-yellow;
       color: $c-grey;
     }
   }
 
-
   svg {
     display: inline-block;
-    height: .7em;
+    height: 0.7em;
     margin-right: 1em;
-    width: .7em;
+    width: 0.7em;
   }
 }
 .tickets-button {
   display: block;
   padding: 15px 0;
 }
-
 
 /* Sections
    ========================================================================== */
@@ -146,7 +154,6 @@ svg {
   width: 2em;
 }
 
-
 /* Non Speaker Session
    ========================================================================== */
 .schedule {
@@ -159,10 +166,9 @@ svg {
   &-title {
     align-items: flex-end;
     display: flex;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 }
-
 
 /* Speaker Session
    ========================================================================== */
@@ -171,7 +177,8 @@ svg {
 }
 .session-wrapper {
 }
-.sub-hr, hr.divide {
+.sub-hr,
+hr.divide {
   border-top: 2px dashed;
 
   &:first-child {
@@ -196,7 +203,7 @@ svg {
   .session-title {
     &:before {
       counter-increment: session;
-      content: "/0" counter(session);
+      content: '/0' counter(session);
       left: 0;
       position: absolute;
     }
@@ -221,11 +228,10 @@ svg {
   }
 }
 
-
 /* Workshops
    ========================================================================== */
 .workshop-header {
-  padding: .5em;
+  padding: 0.5em;
 }
 .workshop-header-image-wrapper {
   display: none;
@@ -260,7 +266,6 @@ svg {
   margin: 1em auto;
 }
 
-
 /* Locations
    ========================================================================== */
 .locations {
@@ -281,16 +286,15 @@ svg {
   width: 1.5em;
 }
 .location-content {
-
 }
-
 
 /* Scholarship
    ========================================================================== */
 .scholarship {
   padding-bottom: 3em;
 
-  p, ol {
+  p,
+  ol {
     padding-bottom: 2em;
   }
   ol {
@@ -298,27 +302,27 @@ svg {
   }
   li {
     list-style-type: decimal;
-    padding: .5em 0;
+    padding: 0.5em 0;
   }
   h3 {
     padding-bottom: 1em;
   }
 }
 
-
 /* Cfp
    ========================================================================== */
 .cfp {
   padding-bottom: 3em;
 
-  p, ul {
+  p,
+  ul {
     padding-bottom: 2em;
   }
   ul {
     margin-left: 1em;
   }
   li {
-    padding: .5em 0;
+    padding: 0.5em 0;
 
     &:before {
       content: '\25A0';
@@ -329,7 +333,6 @@ svg {
     padding-bottom: 1em;
   }
 }
-
 
 /* Diversity
    ========================================================================== */
@@ -343,7 +346,6 @@ svg {
     padding-bottom: 1em;
   }
 }
-
 
 /* Sponsors
    ========================================================================== */
@@ -376,7 +378,7 @@ svg {
     width: 100%;
 
     &:before {
-      content: "";
+      content: '';
       display: inline-block;
       height: 100%;
       vertical-align: middle;
@@ -409,11 +411,10 @@ svg {
   padding-top: 25px;
 }
 
-
 /* Footer
    ========================================================================== */
 .footer {
-  background: rgba($c-black, .2);
+  background: rgba($c-black, 0.2);
   color: inherit;
   padding: 2em;
 }
@@ -427,8 +428,6 @@ svg {
 .previous-years__title {
   margin: 0;
 }
-
-
 
 /* Quotes
    ========================================================================== */
@@ -484,10 +483,14 @@ svg {
   }
 
   a {
-    &, &:link, &:visited {
+    &,
+    &:link,
+    &:visited {
       color: inherit;
     }
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
     }
   }
 }
@@ -527,7 +530,6 @@ svg {
     justify-content: center;
     height: 100%;
   }
-
 }
 
 /* Homepage
@@ -606,9 +608,21 @@ svg {
   }
 }
 
-@import "mq";
+@import 'mq';
 
 // during pre-tickets, the ticket class is dulled out
 .tickets-button {
   background-color: $c-speccy-grey !important;
+}
+
+.origin-story {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid fade-out($c-speccy-grey, 0.8);
+  background: fade-out($c-speccy-grey, 0.9);
+  font-size: 90%;
+
+  strong:after {
+    content: ' ';
+  }
 }

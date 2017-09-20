@@ -26,8 +26,6 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
   //-         small  + VAT
   ol.sessions-wrapper
     - var totalSessions = 0;
-    if config.phase < 3
-      //- include wot
     each session, index in public._data.sessions.sessions
       - if (!session.start) {
       -   session.start = sessionTime.format('HH:mm')
@@ -60,7 +58,7 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
                 div.session-header-line
                   if config.phase >= 3 && session.speaker.name
                     div.session-speaker-name
-                      if false && session.speaker.twitter
+                      if session.speaker.twitter
                         a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
                       else
                         span= session.speaker.name
@@ -78,3 +76,6 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
               div.session-content
                 if session.description
                   !=global.marked(session.description)
+                p.origin-story
+                  strong Speaker origin story:
+                  = (session.bio || "To be revealed!")

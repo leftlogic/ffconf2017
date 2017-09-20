@@ -178,7 +178,8 @@ module.exports = {
           twitter: '',
           photo: '',
         },
-        bio: '',
+        bio:
+          'my kid laptop had a hangman game written in BASIC and i accessed the source and rigged it to cheat against my half sister!',
         links: [],
         slides: '',
         audio: '',
@@ -200,7 +201,8 @@ module.exports = {
           twitter: '',
           photo: '',
         },
-        bio: '',
+        bio:
+          'A glowing green screen, still fascinating despite its sole output: "SYNTAX ERROR"; Years later, the moment I used ATA and ATDT to talk to a friend.',
         links: [],
         slides: '',
         audio: '',
@@ -213,7 +215,7 @@ module.exports = {
           'JavaScript does a remarkable job of hiding memory management from us. What\'s going on behind the scenes?',
         speaker: {
           name: '',
-          twitter: '',
+          twitter: 'katiefenn',
           photo: '',
         },
         bio:
