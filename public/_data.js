@@ -327,7 +327,7 @@ module.exports = {
       slug: 'angular',
       ticket: {
         url:
-          'https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/',
+          'https://www.tickettailor.com/checkout/view-event/id/102994/chk/31b0/',
         price: '449',
       },
 
@@ -389,7 +389,7 @@ module.exports = {
       slug: 'next',
       ticket: {
         url:
-          'https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/',
+          'https://www.tickettailor.com/checkout/view-event/id/102994/chk/31b0/',
         price: '449',
       },
 
