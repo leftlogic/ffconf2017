@@ -215,7 +215,7 @@ module.exports = {
           'JavaScript does a remarkable job of hiding memory management from us. What\'s going on behind the scenes?',
         speaker: {
           name: '',
-          twitter: 'katiefenn',
+          twitter: '',
           photo: '',
         },
         bio:

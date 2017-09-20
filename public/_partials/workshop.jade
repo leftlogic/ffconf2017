@@ -46,6 +46,9 @@ section.workshop-wrapper.workshop-full(id=workshop.slug)
       !=global.marked(workshop.extendedDescription)
 
   div.workshop-nav
-    a.button.back-button(href='/workshops')
-      +icon('', 'arrow-left')
-      |Back to all workshops
+    strong
+      a.button.cta(href="#{ticketUrl}") &nbsp;&nbsp;&nbsp;&nbsp;Get your ticket today&nbsp;&nbsp;&nbsp;&nbsp;
+  //- div.workshop-nav
+  //-   a.button.back-button(href='/workshops')
+  //-     +icon('', 'arrow-left')
+  //-     |Back to all workshops
