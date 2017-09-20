@@ -299,7 +299,8 @@ module.exports = {
           twitter: '',
           photo: '',
         },
-        bio: '',
+        bio:
+          'Parents got me Lego Mindstorms for Xmas, used it and got frustrated that the software didn\'t let me do exactly what I wanted. Thus here I am',
         links: [],
         slides: '',
         audio: '',
