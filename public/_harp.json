@@ -31,7 +31,7 @@
       "https://www.tickettailor.com/checkout/view-event/id/102994/chk/31b0/",
     "source": "https://github.com/leftlogic/ffconf2017",
     "config": {
-      "phase": 2,
+      "phase": 3,
       "soldout": {
         "conference": false,
         "day1": false,
