@@ -1,3 +1,31 @@
+.session-speaker-img {
+  image-rendering: pixelated;
+}
+
+/* phase 3 changes */
+.phase-3 .break,
+.phase-3 .session-title,
+.phase-3 .session-time,
+.phase-3 .monty-2nd .sponsor-title {
+  font-size: 18px;
+}
+
+.phase-3 .sessions-titles .session-title:before {
+  content: '';
+  margin-right: 0;
+}
+
+.phase-3 .schedule-logo {
+  height: 1.4em;
+  width: 1.4em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.phase-3 .session-wrapper {
+  border-bottom: 2px dashed rgba(14, 255, 255, 0.5);
+}
+
 /* bespoke page changes */
 .page-cfp .cta,
 .page-scholarship .cta {
@@ -123,7 +151,8 @@ hr.divide {
   margin-bottom: 0.5rem;
 }
 
-.page-sessions .quote-image-wrapper:after, .page-sessions .quote-content-wrapper {
+.page-sessions .quote-image-wrapper:after,
+.page-sessions .quote-content-wrapper {
   padding-bottom: 2rem;
 }
 
@@ -146,7 +175,6 @@ html {
   font-size: 16px;
   line-height: 26px;
 }
-
 
 p.intro {
   font-size: 18px;
@@ -190,7 +218,7 @@ h2 .section-title-logo {
 .sessions-titles .session-title:before {
   position: relative;
   margin-right: 1rem;
-  font-size: inherit
+  font-size: inherit;
 }
 
 .tickets-button span {
@@ -206,11 +234,11 @@ h2 .section-title-logo {
 }
 
 .page-home .button {
-  padding: .75em 1em;
+  padding: 0.75em 1em;
 }
 
 .page-home .tickets-button {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 /* note: in dev, there's white space between the elements
@@ -242,13 +270,9 @@ h2 .section-title-logo {
     position: relative;
     align-content: end;
     grid-gap: 5px;
-      grid-template-rows: 10vh 10vh 10vh;
-      grid-template-columns: 1fr 1fr .75fr 1.5fr;
-      grid-template-areas:
-       "c g g f"
-       "d d b b"
-       "a a b b";
-
+    grid-template-rows: 10vh 10vh 10vh;
+    grid-template-columns: 1fr 1fr 0.75fr 1.5fr;
+    grid-template-areas: 'c g g f' 'd d b b' 'a a b b';
   }
 
   .home-images .g {
@@ -312,24 +336,20 @@ h2 .section-title-logo {
 
 @media all and (min-width: 425px) {
   .page-home .button {
-    padding: .75em 1.5em;
+    padding: 0.75em 1.5em;
   }
 
   .page-home .tickets-button {
     margin-left: 1.5rem;
   }
-
 }
 
 @media all and (min-width: 425px) {
   @supports (display: grid) {
     .home-images {
       grid-template-rows: 10vh 10vh 20vh;
-      grid-template-columns: 1fr 1fr .75fr 1.5fr;
-      grid-template-areas:
-       "c g g f"
-       "d d e 0"
-       "a a b b";
+      grid-template-columns: 1fr 1fr 0.75fr 1.5fr;
+      grid-template-areas: 'c g g f' 'd d e 0' 'a a b b';
     }
 
     .g.ice,
@@ -340,13 +360,11 @@ h2 .section-title-logo {
     .g.sara {
       display: block;
     }
-
   }
-
 }
 
-
-@media all and (max-width: 768px) { /* sorry… - rem */
+@media all and (max-width: 768px) {
+  /* sorry… - rem */
   .page-home .tickets-button {
     display: inline-block;
   }
@@ -372,10 +390,7 @@ h2 .section-title-logo {
   @supports (display: grid) {
     .home-images {
       grid-template-rows: 50vh 10vh 10vh;
-      grid-template-areas:
-        "a b b b"
-        "c d e g"
-        "c d f g";
+      grid-template-areas: 'a b b b' 'c d e g' 'c d f g';
     }
     .g.sara,
     .g.anna,
@@ -467,7 +482,6 @@ h2 .section-title-logo {
     padding-left: 0rem;
   }
 
-
   .sessions-titles .session-title:before {
     position: absolute;
     left: -5rem;
@@ -475,5 +489,4 @@ h2 .section-title-logo {
   }
 }
 
-
-/* padding to stop Canary from eating my code
+/* padding to stop Canary from eating my code */

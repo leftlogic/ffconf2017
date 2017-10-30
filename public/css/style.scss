@@ -608,6 +608,23 @@ hr.divide {
   }
 }
 
+.session-speaker-img {
+  background-position: 50% 50%;
+  background-size: cover;
+  // height: 180px;
+  margin: 0 auto 20px 0;
+  height: 60vh;
+}
+.session-speaker-img-wrapper,
+.session-about-wrapper {
+  display: block;
+  vertical-align: top;
+  width: 100%;
+}
+.session-speaker-img-wrapper {
+  width: 100%;
+}
+
 @import 'mq';
 
 // during pre-tickets, the ticket class is dulled out
