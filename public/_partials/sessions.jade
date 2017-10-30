@@ -1,6 +1,8 @@
 - var sessionTime = completeDate.clone()
 != partial('/js/_idify')
 
+- const ob = s => s.replace(/./g, '▒')
+
 section.main.sessions-main(role='region', aria-labelledby='sessions', class='sessions-' + config.mode)
   h2#sessions.section-title(role='heading', aria-level='2')
     +icon('section-title-logo', 'bulb-large')
@@ -42,7 +44,7 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
           else
             if config.phase >= 3 && session.speaker.photo
               div.session-speaker-img-wrapper
-                div.session-speaker-img(style='background-image:url(/images/speakers/' + session.speaker.photo + ')' title="Blurry picture? Speaker revealed soon!")
+                div.session-speaker-img(style='background-image:url(/images/speakers/mod/' + session.speaker.photo + ')' title="Blurry picture? Speaker revealed soon!")
             .session-about-wrapper
               header.session-header
                 div.session-header-line
@@ -52,9 +54,9 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
                 div.session-header-line
                   if config.phase >= 3 && session.speaker.name
                     div.session-speaker-name
-                      span= session.speaker.name
+                      span= ob(session.speaker.name)
                       if session.speaker.twitter
-                        a.session-speaker-twitter(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= '@' + session.speaker.twitter
+                        a.session-speaker-twitter(target='_blank', href='https://twitter.com/' + 'ffconf')= '@' + ob(session.speaker.twitter)
                   if config.phase == 4
                     if session.slides || session.audio || session.video
                       div.session-links
@@ -67,7 +69,7 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
               div.session-content
                 if session.description
                   !=global.marked(session.description)
-                if config.phase < 3
+                if config.phase < 4
                   p.origin-story
                     strong Speaker origin story:
                     = (session.bio || "To be revealed!")

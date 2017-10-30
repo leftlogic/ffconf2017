@@ -157,7 +157,8 @@ module.exports = {
         speaker: {
           name: 'James Kyle',
           twitter: 'thejameskyle',
-          photo: 'james.gif',
+          _photo: 'james.gif',
+          photo: '1.gif',
         },
         description:
           'Evolving the web to improve education, accessibility, performance, productivity, and design.',
@@ -176,10 +177,11 @@ module.exports = {
         speaker: {
           name: 'Bruce Lawson',
           twitter: 'brucel',
-          photo: 'bruce.gif',
+          _photo: 'bruce.gif',
+          photo: '2.gif',
         },
         description:
-          'The Web\'s evolving. That\'s nothing new - it\'s always done that. But now it\'s going to more and more people, in Africa, Asia, on weird and wonderful devices over weird and unwonderful networks. Meanwhile, frameworks spring up faster than dung beetles on a fresh poo; the CSS folks hate the React gang who hate the Angular crew. Yet we all want to make the web better - but what do we need it to be like? Let\'s look at the needs and challenges of the next 4 billion consumers, and work out what to do next.',
+          'We do like our Holy Wars, don\'t we?: tables vs CSS? Responsive vs mdot? React vs Angular? CSS or CSS-in-JS? Let\'s look at the real issue: getting the free and open web to the other 4 billion people.',
         bio:
           '1981, my Physics teacher made up a UK101 kit in a tiny computer room which I could use instead of Physical Exercise. So I programmed games.',
         links: [],
@@ -201,7 +203,8 @@ module.exports = {
         speaker: {
           name: 'Monica Dinculescu',
           twitter: 'notwaldorf',
-          photo: 'monica.gif',
+          _photo: 'monica.gif',
+          photo: '3.gif',
         },
         description:
           'They say there\'s two things you never want to see made: sausages and web standards. Sooooo I\'m going to tell you about both! How do browsers work? What are web components even? Everyone\'s using them and maybe you should too! 🆒🐱🎉',
@@ -221,7 +224,8 @@ module.exports = {
         speaker: {
           name: 'Addy Osmani',
           twitter: 'addyosmani',
-          photo: 'addy.gif',
+          _photo: 'addy.gif',
+          photo: '4.gif',
         },
         bio:
           'At 16, wrote a web browser in C++ to understand how HTML, CSS and JavaScript worked…15 years later, still learning',
@@ -246,7 +250,8 @@ module.exports = {
         speaker: {
           name: 'Blaine Cook',
           twitter: 'blaine',
-          photo: 'blaine.gif',
+          _photo: 'blaine.gif',
+          photo: '5.gif',
         },
         bio:
           'A glowing green screen, still fascinating despite its sole output: "SYNTAX ERROR"; Years later, the moment I used ATA and ATDT to talk to a friend.',
@@ -263,7 +268,8 @@ module.exports = {
         speaker: {
           name: 'Katie Fenn',
           twitter: 'katie_fenn',
-          photo: 'katie.gif',
+          _photo: 'katie.gif',
+          photo: '6.gif',
         },
         bio:
           'In 2001 I started making post signatures for a Final Fantasy forum, and then started coding new features for the forum itself.',
@@ -288,7 +294,8 @@ module.exports = {
         speaker: {
           name: 'Jenn Schiffer',
           twitter: 'jennschiffer',
-          photo: 'jenn.gif',
+          _photo: 'jenn.gif',
+          photo: '7.gif',
         },
         bio:
           'my kid laptop had a hangman game written in BASIC and i accessed the source and rigged it to cheat against my half sister!',
@@ -306,7 +313,8 @@ module.exports = {
         speaker: {
           name: 'Joe Hart',
           twitter: 'joehart',
-          photo: 'joe.gif',
+          _photo: 'joe.gif',
+          photo: '8.gif',
         },
         bio:
           'Parents got me Lego Mindstorms for Xmas, used it and got frustrated that the software didn\'t let me do exactly what I wanted. Thus here I am',
