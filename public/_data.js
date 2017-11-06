@@ -30,7 +30,7 @@ module.exports = {
       type: 'Hotels',
       location: [
         {
-          name: 'Jury\'s Inn',
+          name: "Jury's Inn",
           url: 'https://www.jurysinns.com/hotels/brighton',
           detail: 'from £71',
           extra: 'next to Train station & close to venue',
@@ -65,8 +65,8 @@ module.exports = {
       type: 'Food/Drink',
       location: [
         {
-          name: 'Bardsley\'s',
-          detail: 'fish \'n chips',
+          name: "Bardsley's",
+          detail: "fish 'n chips",
           url: 'http://www.bardsleys-fishandchips.co.uk/map',
         },
         {
@@ -157,8 +157,7 @@ module.exports = {
         speaker: {
           name: 'James Kyle',
           twitter: 'thejameskyle',
-          _photo: 'james.gif',
-          photo: '1.gif',
+          photo: 'james.gif',
         },
         description:
           'Evolving the web to improve education, accessibility, performance, productivity, and design.',
@@ -173,15 +172,14 @@ module.exports = {
       {
         duration: 40,
         title:
-          'If you\'re going out of San Francisco, be sure to wear Web Standards in your hair',
+          "If you're going out of San Francisco, be sure to wear Web Standards in your hair",
         speaker: {
           name: 'Bruce Lawson',
           twitter: 'brucel',
-          _photo: 'bruce.gif',
-          photo: '2.gif',
+          photo: 'bruce.gif',
         },
         description:
-          'We do like our Holy Wars, don\'t we?: tables vs CSS? Responsive vs mdot? React vs Angular? CSS or CSS-in-JS? Let\'s look at the real issue: getting the free and open web to the other 4 billion people.',
+          "We do like our Holy Wars, don't we?: tables vs CSS? Responsive vs mdot? React vs Angular? CSS or CSS-in-JS? Let's look at the real issue: getting the free and open web to the other 4 billion people.",
         bio:
           '1981, my Physics teacher made up a UK101 kit in a tiny computer room which I could use instead of Physical Exercise. So I programmed games.',
         links: [],
@@ -203,13 +201,12 @@ module.exports = {
         speaker: {
           name: 'Monica Dinculescu',
           twitter: 'notwaldorf',
-          _photo: 'monica.gif',
-          photo: '3.gif',
+          photo: 'monica.gif',
         },
         description:
-          'They say there\'s two things you never want to see made: sausages and web standards. Sooooo I\'m going to tell you about both! How do browsers work? What are web components even? Everyone\'s using them and maybe you should too! 🆒🐱🎉',
+          "They say there's two things you never want to see made: sausages and web standards. Sooooo I'm going to tell you about both! How do browsers work? What are web components even? Everyone's using them and maybe you should too! 🆒🐱🎉",
         bio:
-          'I found out my mum always won at the QBasic Gorrilas game bc she changed the other player\'s code to randomly miss. Then she taught me how.',
+          "I found out my mum always won at the QBasic Gorrilas game bc she changed the other player's code to randomly miss. Then she taught me how.",
         links: [],
         slides: '',
         audio: '',
@@ -224,8 +221,7 @@ module.exports = {
         speaker: {
           name: 'Addy Osmani',
           twitter: 'addyosmani',
-          _photo: 'addy.gif',
-          photo: '4.gif',
+          photo: 'addy.gif',
         },
         bio:
           'At 16, wrote a web browser in C++ to understand how HTML, CSS and JavaScript worked…15 years later, still learning',
@@ -244,14 +240,13 @@ module.exports = {
 
       {
         duration: 40,
-        title: 'My Password Doesn\'t Work!',
+        title: "My Password Doesn't Work!",
         description:
-          'Security is important, but it doesn\'t have to be complex. Let\'s dispel myths and assuage fear associated with those linchpin of our online lives – passwords – and build toward a more secure and more usable web.',
+          "Security is important, but it doesn't have to be complex. Let's dispel myths and assuage fear associated with those linchpin of our online lives – passwords – and build toward a more secure and more usable web.",
         speaker: {
           name: 'Blaine Cook',
           twitter: 'blaine',
-          _photo: 'blaine.gif',
-          photo: '5.gif',
+          photo: 'blaine.gif',
         },
         bio:
           'A glowing green screen, still fascinating despite its sole output: "SYNTAX ERROR"; Years later, the moment I used ATA and ATDT to talk to a friend.',
@@ -262,14 +257,13 @@ module.exports = {
       },
       {
         duration: 40,
-        title: 'Memory: Don\'t Forget to Take Out the Garbage',
+        title: "Memory: Don't Forget to Take Out the Garbage",
         description:
-          'JavaScript does a remarkable job of hiding memory management from us. What\'s going on behind the scenes?',
+          "JavaScript does a remarkable job of hiding memory management from us. What's going on behind the scenes?",
         speaker: {
           name: 'Katie Fenn',
           twitter: 'katie_fenn',
-          _photo: 'katie.gif',
-          photo: '6.gif',
+          photo: 'katie.gif',
         },
         bio:
           'In 2001 I started making post signatures for a Final Fantasy forum, and then started coding new features for the forum itself.',
@@ -294,8 +288,7 @@ module.exports = {
         speaker: {
           name: 'Jenn Schiffer',
           twitter: 'jennschiffer',
-          _photo: 'jenn.gif',
-          photo: '7.gif',
+          photo: 'jenn.gif',
         },
         bio:
           'my kid laptop had a hangman game written in BASIC and i accessed the source and rigged it to cheat against my half sister!',
@@ -313,11 +306,10 @@ module.exports = {
         speaker: {
           name: 'Joe Hart',
           twitter: 'joehart',
-          _photo: 'joe.gif',
-          photo: '8.gif',
+          photo: 'joe.gif',
         },
         bio:
-          'Parents got me Lego Mindstorms for Xmas, used it and got frustrated that the software didn\'t let me do exactly what I wanted. Thus here I am',
+          "Parents got me Lego Mindstorms for Xmas, used it and got frustrated that the software didn't let me do exactly what I wanted. Thus here I am",
         links: [],
         slides: '',
         audio: '',
@@ -364,7 +356,7 @@ module.exports = {
       topics: [
         {
           title: 'New features',
-          description: 'What\'s new in Angular v5.',
+          description: "What's new in Angular v5.",
         },
         {
           title: 'Low level APIs',
@@ -380,7 +372,7 @@ module.exports = {
         },
         {
           title: 'Advanced Router',
-          description: 'Use the router in ways you didn\'t know were possible.',
+          description: "Use the router in ways you didn't know were possible.",
         },
         {
           title: 'Modern Server Side Rendering',
@@ -448,7 +440,7 @@ module.exports = {
       description:
         'Next.js is a framework for building React applications with automatic server side rendering support, which results in improved performance over "vanilla" React. The framework also offers zero configuration, automatic code splitting and prefech out of the box.',
       extendedDescription:
-        '<p>You will be expected to be comfortable with JavaScript, and be familiar with, or at least comfortable with the JSX concepts (putting XML inside your JavaScript). We&#39;ll also be using Node 8 as we&#39;ll make use of async/await.</p> <p><strong>Outcomes:</strong></p> <ul> <li style=\'list-style-type: square; margin-left: 20px\'>How to create and configure next Next based projects</li> <li style=\'list-style-type: square; margin-left: 20px\'>Experience with latest JavaScript features, including async/await</li> <li style=\'list-style-type: square; margin-left: 20px\'>Exposure to some gotchas</li> <li style=\'list-style-type: square; margin-left: 20px\'>How to handle special cases around server/client side only and using environment variables</li> <li style=\'list-style-type: square; margin-left: 20px\'>Custom routing and parameter handling</li> </ul> ',
+        "<p>You will be expected to be comfortable with JavaScript, and be familiar with, or at least comfortable with the JSX concepts (putting XML inside your JavaScript). We&#39;ll also be using Node 8 as we&#39;ll make use of async/await.</p> <p><strong>Outcomes:</strong></p> <ul> <li style='list-style-type: square; margin-left: 20px'>How to create and configure next Next based projects</li> <li style='list-style-type: square; margin-left: 20px'>Experience with latest JavaScript features, including async/await</li> <li style='list-style-type: square; margin-left: 20px'>Exposure to some gotchas</li> <li style='list-style-type: square; margin-left: 20px'>How to handle special cases around server/client side only and using environment variables</li> <li style='list-style-type: square; margin-left: 20px'>Custom routing and parameter handling</li> </ul> ",
     },
   ],
   quotes: [
@@ -509,7 +501,7 @@ module.exports = {
     },
     {
       text:
-        'I can pinpoint ffconf talks, which have changed the way I approach web development and the tools I use. That\'s why every year it has an unmovable place in my calendar.',
+        "I can pinpoint ffconf talks, which have changed the way I approach web development and the tools I use. That's why every year it has an unmovable place in my calendar.",
       author: 'Glenn Jones, co-founder of Madgex & 2011 speaker',
       url: 'https://twitter.com/glennjones',
       photo: 'glenn-jones.jpg',
