@@ -1,7 +1,7 @@
 - var sessionTime = completeDate.clone()
 != partial('/js/_idify')
 
-- const ob = s => s.replace(/./g, '▒')
+- const ob = s => s; //s.replace(/./g, '▒')
 
 section.main.sessions-main(role='region', aria-labelledby='sessions', class='sessions-' + config.mode)
   h2#sessions.section-title(role='heading', aria-level='2')
@@ -56,7 +56,7 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
                     div.session-speaker-name
                       span= ob(session.speaker.name)
                       if session.speaker.twitter
-                        a.session-speaker-twitter(target='_blank', href='https://twitter.com/' + 'ffconf')= '@' + ob(session.speaker.twitter)
+                        a.session-speaker-twitter(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= '@' + ob(session.speaker.twitter)
                   if config.phase == 4
                     if session.slides || session.audio || session.video
                       div.session-links
