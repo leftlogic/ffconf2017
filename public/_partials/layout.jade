@@ -129,7 +129,7 @@ html(id=id, class=klass, lang="en")
     <!--[if gt IE 8]><!-->
     script(src='/js/script.js')
     script.
-      if (false && 'serviceWorker' in navigator) {
+      if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js', { scope: '/' });
       }
 
