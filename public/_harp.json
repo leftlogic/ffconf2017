@@ -1,20 +1,32 @@
 {
+  "tmp": [{ "title": "Code Of Conduct", "url": "/code-of-conduct" }],
   "globals": {
     "siteNav": [
       { "title": "sessions", "url": "/sessions" },
-      { "title": "Workshops", "url": "/workshops" },
-      { "title": "Locations", "url": "/locations" },
-      { "title": "Code Of Conduct", "url": "/code-of-conduct" }
+      {
+        "title": "Soundtrack",
+        "url":
+          "https://open.spotify.com/user/1134149989/playlist/4eyy74RPZNl0fSk6DysvzM"
+      },
+      {
+        "title": "Diversity",
+        "url": "/diversity"
+      },
+      {
+        "title": "Sponsorship",
+        "url": "https://media.ffconf.org/2017/sponsor-pack.pdf"
+      }
     ],
     "allSiteNav": [
       { "title": "Sessions", "url": "/sessions" },
       { "title": "Workshops", "url": "/workshops" },
+      { "title": "Locations", "url": "/locations" },
       { "title": "Scholarships", "url": "/scholarship" },
-      { "title": "Diversity initiative", "url": "/diversity" },
       {
         "title": "Sponsorship",
         "url": "https://media.ffconf.org/2017/sponsor-pack.pdf"
       },
+      { "title": "Diversity initiative", "url": "/diversity" },
       { "title": "Code of Conduct", "url": "/code-of-conduct" },
       { "title": "Terms", "url": "/terms" }
     ],
@@ -29,19 +41,21 @@
     "ticketPrice": "179",
     "ticketUrl":
       "https://www.tickettailor.com/checkout/view-event/id/102994/chk/31b0/",
+    "videos":
+      "https://www.youtube.com/playlist?list=PLXmT1r4krsTo5KtThq4dATD_ctsV8mdJQ",
     "source": "https://github.com/leftlogic/ffconf2017",
     "config": {
-      "phase": 3,
+      "phase": 4,
       "soldout": {
-        "conference": false,
-        "day1": false,
-        "day2": false,
-        "workshops": false,
-        "css-layout": false,
-        "angular-2": false,
-        "next": false
+        "conference": true,
+        "day1": true,
+        "day2": true,
+        "workshops": true,
+        "css-layout": true,
+        "angular-2": true,
+        "next": true
       },
-      "mode": "titles",
+      "mode": "schedule",
       "comments": {
         "mode-options": "titles|speakers|schedule",
         "phase-options": {
@@ -53,7 +67,7 @@
           "4": "after the conference"
         }
       },
-      "sponsorsAvailable": true
+      "sponsorsAvailable": false
     }
   }
 }

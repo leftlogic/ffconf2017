@@ -25,7 +25,7 @@ footer.footer
   nav.previous-years
     h5.previous-years__title Previous years:
     ul.previous-years__list
-      - for (var i = 2016; i >= 2009; i--) {
+      - for (var i = 2009; i <= 2016; i++) {
         li.previous-years__item
           a.previous-years__link(href='https://' + i + '.ffconf.org/')= i
       - }

@@ -33,7 +33,7 @@ section.main.sessions-main(role='region', aria-labelledby='sessions', class='ses
       - if (!session.break) totalSessions++;
 
       if (session.break && config.phase == 3) || !session.break
-        li.session-wrapper.js-session(id=idify(session.title), data-date1=dates[0] + ' ' + session.start, data-date2=dates[1] + ' ' + session.start)
+        li.session-wrapper.js-session(data-session=JSON.stringify(Object.assign({}, session, { slug: idify(session.title) })) id=idify(session.title), data-date1=dates[0] + ' ' + session.start, data-date2=dates[1] + ' ' + session.start)
           if session.break
             header.break
               h3.schedule-title(role='heading', aria-level='3')

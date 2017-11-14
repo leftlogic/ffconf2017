@@ -123,12 +123,13 @@ html(id=id, class=klass, lang="en")
     if stripped !== true
       div.main-wrapper
         include ../_partials/sponsors
+        include ../_partials/thanks
         include ../_partials/footer
 
     <!--[if gt IE 8]><!-->
     script(src='/js/script.js')
     script.
-      if ('serviceWorker' in navigator) {
+      if (false && 'serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js', { scope: '/' });
       }
 
