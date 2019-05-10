@@ -4,7 +4,7 @@ Art Direction by Remy Sharp - @rem
 
 Development by Giulia Alfonsi - @electric_g
 
-Design by
+Design by Dan Edwards - @de
 
 
 /* SITE */
